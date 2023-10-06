@@ -1,0 +1,5 @@
+**/.DS_Store
+_misc
+node_modules
+dist
+package-lock.json
