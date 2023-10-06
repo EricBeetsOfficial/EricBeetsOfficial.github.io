@@ -11200,6 +11200,9 @@ p {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
 }
+.page-section .col-6 {
+  min-height: 230px;
+}
 
 @media (min-width: 768px) {
   section {
@@ -11360,21 +11363,17 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
-.projects .projects-item {
+#portfolio .portfolio-item, #projects-pro .portfolio-item, #projects-perso .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
   margin-right: auto;
 }
-.projects .projects-item .img-fluid {
-  height: 18rem;
-  border-radius: 10px;
-}
-.projects .projects-item .projects-link {
+#portfolio .portfolio-item .portfolio-link, #projects-pro .portfolio-item .portfolio-link, #projects-perso .portfolio-item .portfolio-link {
   position: relative;
   display: block;
   margin: 0 auto;
 }
-.projects .projects-item .projects-link .projects-hover {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover, #projects-pro .portfolio-item .portfolio-link .portfolio-hover, #projects-perso .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
   width: 100%;
@@ -11385,60 +11384,60 @@ header.masthead .masthead-heading {
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
 }
-.projects .projects-item .projects-link .projects-hover .projects-hover-content {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content, #projects-pro .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content, #projects-perso .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
   color: white;
 }
-.projects .projects-item .projects-link:hover .projects-hover {
+#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover, #projects-pro .portfolio-item .portfolio-link:hover .portfolio-hover, #projects-perso .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 1;
 }
-.projects .projects-item .projects-caption {
+#portfolio .portfolio-item .portfolio-caption, #projects-pro .portfolio-item .portfolio-caption, #projects-perso .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
 }
-.projects .projects-item .projects-caption .projects-caption-heading {
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading, #projects-pro .portfolio-item .portfolio-caption .portfolio-caption-heading, #projects-perso .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   margin-bottom: 0;
 }
-.projects .projects-item .projects-caption .projects-caption-subheading {
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading, #projects-pro .portfolio-item .portfolio-caption .portfolio-caption-subheading, #projects-perso .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.projects-modal .modal-dialog {
+.portfolio-modal .modal-dialog {
+  margin: 1rem;
+  max-width: 100vw;
   max-width: 75%;
-  max-height: 75%;
-  padding-bottom: 40rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-.projects-modal .modal-content {
+.portfolio-modal .modal-content {
   padding-top: 6rem;
-  padding-bottom: 50rem;
+  padding-bottom: 6rem;
   text-align: center;
-  background-color: #eeefff;
-  height: 75rem;
 }
-.projects-modal .modal-content h2, .projects-modal .modal-content .h2 {
+.portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
   font-size: 3rem;
   line-height: 3rem;
 }
-.projects-modal .modal-content p.item-intro {
+.portfolio-modal .modal-content p.item-intro {
   font-style: italic;
   margin-bottom: 2rem;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.projects-modal .modal-content p {
+.portfolio-modal .modal-content p {
   margin-bottom: 2rem;
 }
-.projects-modal .modal-content ul.list-inline {
+.portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 2rem;
 }
-.projects-modal .modal-content img {
+.portfolio-modal .modal-content img {
   margin-bottom: 2rem;
 }
-.projects-modal .close-modal {
+.portfolio-modal .close-modal {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
@@ -11447,7 +11446,7 @@ header.masthead .masthead-heading {
   cursor: pointer;
   background-color: transparent;
 }
-.projects-modal .close-modal:hover {
+.portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
 
@@ -11614,7 +11613,7 @@ header.masthead .masthead-heading {
 }
 @media (min-width: 1200px) {
   .timeline > li {
-    min-height: 170px;
+    min-height: 185px;
   }
   .timeline > li .timeline-panel {
     padding: 0 20px 20px 100px;
@@ -11648,60 +11647,6 @@ header.masthead .masthead-heading {
 
 .img-brand {
   height: 2.75rem;
-}
-
-section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-section#contact .section-heading {
-  color: #fff;
-}
-section#contact form#contactForm .form-group {
-  margin-bottom: 1.5rem;
-}
-section#contact form#contactForm .form-group input,
-section#contact form#contactForm .form-group textarea {
-  padding: 1.25rem;
-}
-section#contact form#contactForm .form-group input.form-control {
-  height: auto;
-}
-section#contact form#contactForm .form-group-textarea {
-  height: 100%;
-}
-section#contact form#contactForm .form-group-textarea textarea {
-  height: 100%;
-  min-height: 10rem;
-}
-section#contact form#contactForm p.help-block {
-  margin: 0;
-}
-section#contact form#contactForm .form-control:focus {
-  border-color: #ffc800;
-  box-shadow: none;
-}
-section#contact form#contactForm ::-webkit-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm ::-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-ms-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
 }
 
 .footer {
@@ -11739,10 +11684,33 @@ footer ul.quicklinks {
   outline: none;
 }
 
-section {
-  padding: 0;
+div.stretchy-wrapper {
+  background: linear-gradient(90deg, #c8c8c8 0%, white 50%, #c8c8c8 100%);
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio */
 }
 
-.splide__slide img {
-  width: 45%;
+div.stretchy-wrapper > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.carousel-item.active video, .carousel-item.active img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
