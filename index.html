@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Freelancer, Augmented, Mixed, and Virtual Reality Expert, 2D/3D Developer" />
+        <meta name="author" content="Eric Beets" />
+        <meta name="keywords" content="eric, neric, Beets, BEETS, ArfArf, arfarf, Freelancer, Augmented, Mixed, and Virtual Reality Expert, 2D/3D Developer" />
+        <meta property="og:title" content="Eric Beets" />
+        <meta property="og:description" content="Freelancer, Augmented, Mixed and Virtual Reality Expert, 2d / 3d Developer." />
+        <meta property="og:image" content="http://ericbeets.free.fr/assets/img/resumeSite.jpg" />
+        <meta property="og:site_name" content="Eric Beets | Freelancer, Augmented, Mixed and Virtual Reality Expert, 2d / 3d Developer" />
+        <meta property="fb:admins" content="EricBeets" />
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+        <title>Eric BEETS</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/assets/img/profile.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- BabylonJS-->
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+        <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Kaushan Script:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Carousel-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="js/carousel.js"></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><p>Eric Beets</p></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/assets/EricBeets.pdf" target="_blank" style="font-size: calc(100%); font-weight: bold">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#career">Career</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects-pro">Professional Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects-perso">Personal Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead" id="parent">
+            <canvas class="renderCanvas" id="renderCanvas" allow="accelerometer"></canvas>
+            <div class="masthead-heading">
+                <p>2D/3D Developer</p>
+                <p>Augmented, Mixed, and Virtual Reality Expert</p>
+                <p>Software Architect</p>
+            </div>
+        </header>
+        <!-- Skills-->
+        <section class="page-section" id="skills">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Skills</h2>
+                    <h3 class="section-subheading text-muted">What I can do.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6">
+                        <img class="square" src="/assets/img/skills/language.png" width="20%" />
+                        <h4 class="my-3">Languages</h4>
+                        <p class="text-muted skills">C/C++/C# to develop low, middle, and high-core frameworks in various development environments.</p>
+                    </div>
+                    <div class="col-6">
+                        <img class="square" src="/assets/img/skills/framework.png" alt="..." style="width: 20%" />
+                        <h4 class="my-3">Frameworks</h4>
+                        <p class="text-muted">CMake to generate and build complex projects on multiple platforms, QT for creating user-friendly interfaces, OpenCV for developing image processing tools, and OpenGL, Ogre3D, and Unity for building complex 3D solutions.</p>
+                    </div>
+                    <div class="col-6">
+                        <img class="square" src="/assets/img/skills/format.png" alt="..." style="width: 20%" />
+                        <h4 class="my-3">3D Formats</h4>
+                        <p class="text-muted skills">Fbx, Obj, Stl, Collada, glTF: all open common 3d formats.</p>
+                    </div>
+                    <div class="col-6">
+                        <img class="square" src="/assets/img/skills/soft.png" alt="..." style="width: 20%" />
+                        <h4 class="my-3">3D Software</h4>
+                        <p class="text-muted skills">An essential understanding of 3D software.</p>
+                    </div>
+                    <div class="col-6">
+                        <img class="square" src="/assets/img/skills/versionning.png" alt="..." style="width: 20%" />
+                        <h4 class="my-3">Versioning</h4>
+                        <p class="text-muted skills">To back up and effectively manage complex source code projects.</p>
+                    </div>
+                    <div class="col-6">
+                        <img class="square" src="/assets/img/skills/editors.png" alt="..." style="width: 20%" />
+                        <h4 class="my-3">Editor & Tools</h4>
+                        <p class="text-muted skills">Regardless of the platform, use all common development tools.</p>
+                    </div>
+                    <div class="col-6">
+                        <img class="square" src="/assets/img/skills/os-desktop.png" alt="..." style="width: 20%" />
+                        <h4 class="my-3">Desktop OS</h4>
+                        <p class="text-muted skills">To build and develop user-friendly and performant software on desktop platforms.</p>
+                    </div>
+                    <div class="col-6">
+                        <img class="square" src="/assets/img/skills/os-mobile.png" alt="..." style="width: 20%" />
+                        <h4 class="my-3">Mobile OS</h4>
+                        <p class="text-muted skills">To build and develop user-friendly and performant software on mobile platforms. Writing clean and multi-platform code.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Career-->
+        <section class="page-section bg-light" id="career">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Career</h2>
+                    <h3 class="section-subheading text-muted">When I did.</h3>
+                </div>
+                <ul class="timeline">
+                    <li class="timeline">
+                        <div class="timeline-image">
+                            <br />
+                            <h4><a href="/assets/EricBeets.pdf" target="_blank" style="text-decoration: inherit">Ready for your adventure!</a></h4>
+                        </div>
+                        <div class="timeline-panel"><div class="timeline-body"></div></div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <a href="#projects-pro"><img class="rounded-circle img-fluid" src="/assets/img/career/opuscope.png" alt="..." /></a>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2019 - 2023</h4>
+                                <h4 class="subheading">Opuscope</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <h6>Senior 3D Software Engineer - Fully remote</h6>
+                                <ul>
+                                    <li class="p text-muted">
+                                        Expertise in 3D real-time workflow technologies, including:
+                                        <ul>
+                                            <li class="p text-muted">shaders,</li>
+                                            <li class="p text-muted">modelers, scene graphs,</li>
+                                            <li class="p text-muted">formats and GPGPU.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="p text-muted">Software architecture design and SDK development.</li>
+                                    <li class="p text-muted">
+                                        Working on various projects based on SDKs, such as
+                                        <ul>
+                                            <li class="p text-muted">glTFast,</li>
+                                            <li class="p text-muted">BabylonJS / BabylonNative,</li>
+                                            <li class="p text-muted">SparkAR, ToolBrush,</li>
+                                            <li class="p text-muted">and 3D maps.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <a href="#projects-pro"><img class="rounded-circle img-fluid" src="/assets/img/career/marebiz.png" alt="..." /></a>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2017-2018</h4>
+                                <h4 class="subheading">Marebiz</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <h6>CTO / Co-Founder</h6>
+                                <ul>
+                                    <li class="p text-muted bullets-left">:Augmented, Virtual, and Mixed Reality Mobile applications</li>
+                                    <ul>
+                                        <li class="p text-muted sub-bullets-left">.Augmented Reality Mobile apps</li>
+                                        <li class="p text-muted sub-bullets-left">.360° Architecture Virtual Tour</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <a href="#projects-pro"><img class="rounded-circle img-fluid" src="/assets/img/career/augment.png" alt="..." /></a>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2013-2017</h4>
+                                <h4 class="subheading">Augment</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <h6>Lead 3D Engineer</h6>
+                                <p class="text-muted">Real-time 3D rendering engine fully written in OpenGL(ES) for mobile platforms:</p>
+                                <ul>
+                                    <li class="p text-muted">GLSL dynamic factory and texture adaptation.</li>
+                                    <li class="p text-muted">Responsible for managing the 3D workflow.</li>
+                                    <li class="p text-muted">"Augment Desktop" application for visualizing, configuring, and preparing model materials and interactive scenarios.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/assets/img/career/xdprod.png" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2009-2013</h4>
+                                <h4 class="subheading">XD Productions</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <h6>3D R&D Engineer</h6>
+                                <p class="text-muted bullets-left">:3D Reconstruction Software and features</p>
+                                <ul>
+                                    <li class="p text-muted sub-bullets-left">.Projection Mapping</li>
+                                    <li class="p text-muted sub-bullets-left">.Synchronized video capture</li>
+                                    <li class="p text-muted sub-bullets-left">.AutoDesk Plug-Ins</li>
+                                    <li class="p text-muted sub-bullets-left">.Ogre3D</li>
+                                    <li class="p text-muted sub-bullets-left">.Unity 3D</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/assets/img/career/uniways.png" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2007-2009</h4>
+                                <h4 class="subheading">Uniyways</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <h6>R&D Engineer</h6>
+                                <p class="text-muted">Image Processing and Computer Vision:</p>
+                                <ul>
+                                    <li class="p text-muted">Object recognition</li>
+                                    <li class="p text-muted">Video mapping</li>
+                                    <li class="p text-muted">...</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/assets/img/career/hybridHigh.png" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2005-2007</h4>
+                                <h4 class="subheading">Hybrid-MC</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <h6>R&D Engineer</h6>
+                                <p class="text-muted bullets-left">.Development, optimization, and support of Real-Time 3D rendering engine</p>
+                                <p class="text-muted bullets-left">:International Exhibitions</p>
+                                <ul>
+                                    <li class="p text-muted sub-bullets-left">NAB (Las Vegas)</li>
+                                    <li class="p text-muted sub-bullets-left">IBC (Amsterdam)</li>
+                                    <li class="p text-muted sub-bullets-left">BroadcastAsia (Singapore)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Projects Pro-->
+        <section class="page-section" id="projects-pro">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Professional Projects</h2>
+                    <h3 class="section-subheading text-muted">What I have done Professionally.</h3>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#projectsProMinsar">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="/assets/img/projects/minsar.png" alt="..." height="30px" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Minsar Studio by Opuscope</div>
+                                    <div class="portfolio-caption-subheading text-muted">Mixed Reality</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#projectsProMappn">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="/assets/img/projects/Mappn.png" alt="..." height="30px" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Mappn by Opuscope</div>
+                                    <div class="portfolio-caption-subheading text-muted">Rendering</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#projectsProMarebiz">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="/assets/img/projects/marebiz.jpg" alt="..." height="30px" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Marebiz</div>
+                                    <div class="portfolio-caption-subheading text-muted">Augmented Reality</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#projectsProAugment">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="/assets/img/projects/augment.png" alt="..." height="30px" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Augment</div>
+                                    <div class="portfolio-caption-subheading text-muted">Augmented Reality</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Perso-->
+        <section class="page-section bg-light" id="projects-perso">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Personal Projects</h2>
+                    <h3 class="section-subheading text-muted">What I have done Personally.</h3>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioPersoArfArf">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="/assets/img/projects/arfarfMe-thumbnail.jpg" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">ArfArf Me</div>
+                                    <div class="portfolio-caption-subheading text-muted">Augmented Reality Mobile / ArCore</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioPersoPrint3D">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="/assets/img/projects/D12-230.png" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">3D Prints</div>
+                                    <div class="portfolio-caption-subheading text-muted">3D Print</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioPersoDigitalClock">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="/assets/img/projects/digitalClock/digital_clock.png" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Digital Clock</div>
+                                    <div class="portfolio-caption-subheading text-muted">3D Print</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioPersoWeatherStation">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="/assets/img/projects/weather/display.jpeg" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Weather Station</div>
+                                    <div class="portfolio-caption-subheading text-muted">3D Print</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioPersoNerf">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="https://people.eecs.berkeley.edu/~tancik/nerf/website_renders/images/nerf_graph.jpg" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">NeRf - Coming Soon</div>
+                                    <div class="portfolio-caption-subheading text-muted">Neural Radiance Fields</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About Me</h2>
+                    <h3 class="section-subheading text-muted">Who I am.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="/assets/img/photo_.png" alt="..." />
+                        <h4>Eric Beets</h4>
+                        <p class="text-muted">French Lead Developer based in Bordeaux</p>
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:ericbeets+job@free.fr" aria-label="Eric Beets mail" target="_blank"><i class="fas fa-at"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/EricBeetsOfficial" aria-label="Eric Beets GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/eric-beets-a424623/" aria-label="Eric Beets LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/eric.beets.5" aria-label="Eric Beets Facebook Profile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://wa.me/33652221356?text=I'm%20interested%20in%20your%20profile" aria-label="Eric Beets Whatsapp Contact" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <div class="block animatable fadeIn"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896541.033641753!2d-2.839379798499222!3d44.848992404482374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527e8f751ca81%3A0x796386037b397a89!2sBordeaux!5e0!3m2!1sfr!2sfr!4v1695806176440!5m2!1sfr!2sfr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border-radius: 15px; border: 0"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-6 text-left"><p class="text-muted">Copyright &copy; Eric Beets 2018-2024</p></div>
+                    <div class="col-6 text-right">
+                        <p class="text-muted">
+                            <a class="link-dark text-decoration-none me-3" href="/assets/html/terms/privacy.html" target="_blank">Privacy Policy</a>
+                            <a class="link-dark text-decoration-none" href="/assets/html/terms/termsfeed-terms-conditions-html-english.html" target="_blank">Terms of Use</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <div class="portfolio-modal modal fade" id="projectsProMinsar" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Minsar Studio by Opuscope</h2>
+                                    <p class="item-intro text-muted">
+                                        Minsar Studio is the immersive editor to prototype and design
+                                        <br />
+                                        interactive 3D/AR/VR scenes, code-free.
+                                    </p>
+                                    <video controls autoplay onloadstart="this.volume=0.1" src="/assets/videos/Demoreel_Minsar_02.mp4" width="420" height="315"></video>
+                                    <div style="text-align: left">
+                                        <p class="text-muted">The Minsar platform exists to help you prototype an AR/VR app or experience:</p>
+                                        <ul>
+                                            <li>Create your first scene. You can add up to 50 of them in the same project.</li>
+                                            <li>Choose an anchor to specify how your content should be placed in the physical or virtual world.</li>
+                                            <li>Import as many assets as you like, either created by our or your team, or retrieved from providers like Sketchfab.</li>
+                                            <li>Adjust their position, scale and rotation with incredible precision in real-time using your immersive device. What you see is exactly what your users will get!</li>
+                                            <li>Use our no-code features to easily add storytelling to your scenes.</li>
+                                        </ul>
+                                    </div>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Date:</strong>
+                                            Decembre 2019-2022
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Augmented, Mixed, and Virtual Reality
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button" onclick="VideoStop()">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="projectsProMappn" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Mappn by Opuscope</h2>
+                                    <p class="item-intro text-muted">
+                                        Mappn is a social map that allows you to have stronger connections between
+                                        <br />
+                                        your friends, your favorite spots, and your communities!
+                                    </p>
+                                    <video controls autoplay onloadstart="this.volume=0.1" src="/assets/videos/Demoreel_Mappn.mp4" width="420" height="315"></video>
+                                    <div style="text-align: left">
+                                        <p class="text-muted">Mappn is a location-based social media app that allows users to see their friends' locations and activities, as well as post their own Moments (photos or updates) on a map.</p>
+                                        <p class="text-muted">The app also has an augmented reality feature for users who would like to see their posts in AR.</p>
+                                        <p class="text-muted">‍Mappn aims to bring together users' lives, friends, and favorite spots in one app.</p>
+                                    </div>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Date:</strong>
+                                            2022-2024
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Augmented Reality & Rendering
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button" onclick="VideoStop()">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="projectsProMarebiz" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Marebiz</h2>
+                                    <p class="item-intro text-muted">Marebiz provides a sales accelerator solution that helps your field sales force increase sales performance and efficiency.</p>
+                                    <iframe width="420" height="315" src="https://www.youtube.com/embed/tX1Cbq6Axl4?autoplay=0&amp;loop=1&amp;enablejsapi=1"></iframe>
+                                    <div style="text-align: left"><p class="text-muted">The sales force will be able to demonstrate your products value proposition in real time and size in your client's environment. Of course the cloud solution is integrated with your CRM and Order management tools for a seamless experience.</p></div>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Date:</strong>
+                                            Decembre 2017-2018
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Augmented Reality
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button" onclick="VideoStopYouTube()">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="projectsProAugment" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Augment</h2>
+                                    <p class="item-intro text-muted">The augmented reality platform that generates business and commercial benefits</p>
+                                    <iframe width="420" height="315" src="https://www.youtube.com/embed/fGMK-napa4A?autoplay=0&amp;loop=1&amp;enablejsapi=1"></iframe>
+                                    <div style="text-align: left">
+                                        <ul>
+                                            <li>Increase eCommerce sales and engagement</li>
+                                            <li>Get your AR-ready 3D products fast and at an unbeatable price</li>
+                                            <li>Drive field sales</li>
+                                        </ul>
+                                    </div>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Date:</strong>
+                                            Decembre 2013-2017
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Augmented, Mixed, and Virtual Reality
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button" onclick="VideoStopYouTube()">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioPersoArfArf" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">ArfArf Me</h2>
+                                    <p class="item-intro text-muted">Augmented Reality on Mobile to show a 3d model.</p>
+                                    <iframe width="420" height="315" src="https://www.youtube.com/embed/WIqeDnMBM6c?autoplay=0&amp;loop=1"></iframe>
+                                    <p>Thanks to ArCore, it allow to present 3d models in Augmented Reality. With native gestures, you can choose the position and the orientation of the 3d models (translations & rotation).</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Date:</strong>
+                                            January 2019
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            AR Mobile / ArCore
+                                        </li>
+                                    </ul>
+                                    <a href="https://play.google.com/store/apps/details?id=com.arfarf.arfarfme&amp;hl=fr&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" width="250" /></a>
+                                    <br />
+                                    <br />
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioPersoDigitalClock" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Digital Clock</h2>
+                                    <p class="item-intro text-muted">Home made digital clock</p>
+                                    <div class="container">
+                                        <div class="carousel slide" id="myCarouselDigitalClock" data-ride="carousel" data-interval="false" data-bs-interval="false">
+                                            <ol class="carousel-indicators">
+                                                <li class="active" data-target="#myCarouselDigitalClock" data-slide-to="0"></li>
+                                                <li data-target="#myCarouselDigitalClock" data-slide-to="1"></li>
+                                                <li data-target="#myCarouselDigitalClock" data-slide-to="2"></li>
+                                                <li data-target="#myCarouselDigitalClock" data-slide-to="3"></li>
+                                            </ol>
+                                            <div class="stretchy-wrapper carousel-inner">
+                                                <div class="carousel-item active" style="background-image: url('/assets/img/projects/digitalClock/IMG_0524.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/digitalClock/IMG_0526.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/digitalClock/IMG_0538.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/digitalClock/IMG_0525.MOV')">
+                                                    <video controls autoplay muted loop><source src="/assets/img/projects/digitalClock/IMG_0525.MOV" type="video/mp4" /></video>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#myCarouselDigitalClock" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#myCarouselDigitalClock" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/EricBeetsOfficial/ESP32" target="_blank"><p class="text-muted">Code on github</p></a>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Date:</strong>
+                                            2024
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            3D Printing & ESP32
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button" onclick="VideoStop()">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioPersoWeatherStation" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Weather Station</h2>
+                                    <p class="item-intro text-muted">Home made weather station</p>
+                                    <div class="container">
+                                        <div class="carousel slide" id="myCarouselWeather" data-ride="carousel" data-interval="false">
+                                            <ol class="carousel-indicators">
+                                                <li class="active" data-target="#myCarouselWeather" data-slide-to="0"></li>
+                                                <li data-target="#myCarouselWeather" data-slide-to="1"></li>
+                                                <li data-target="#myCarouselWeather" data-slide-to="2"></li>
+                                                <li data-target="#myCarouselWeather" data-slide-to="3"></li>
+                                                <li data-target="#myCarouselWeather" data-slide-to="4"></li>
+                                            </ol>
+                                            <div class="stretchy-wrapper carousel-inner">
+                                                <div class="carousel-item active" style="background-image: url('/assets/img/projects/weather/IMG_0540.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/weather/IMG_0541.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/weather/IMG_0542.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/weather/IMG_0543.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/weather/IMG_0544.jpg')"></div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#myCarouselWeather" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#myCarouselWeather" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/EricBeetsOfficial/ESP32" target="_blank"><p class="text-muted">Code on github</p></a>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Date:</strong>
+                                            2024
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            3D Printing & ESP32
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioPersoNerf" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">NeRf</h2>
+                                    <p class="item-intro text-muted">Representing Scenes as Neural Radiance Fields for View Synthesis</p>
+                                    <p>Coming Soon...</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Date:</strong>
+                                            ~
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            AR Rendering
+                                        </li>
+                                    </ul>
+                                    <br />
+                                    <br />
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioPersoPrint3D" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">3d Prints</h2>
+                                    <p class="item-intro text-muted">Home made 3d prints</p>
+                                    <div class="container">
+                                        <div class="carousel slide" id="myCarouselPrint" data-ride="carousel" data-interval="false">
+                                            <ol class="carousel-indicators">
+                                                <li class="active" data-target="#myCarouselPrint" data-slide-to="0"></li>
+                                                <li data-target="#myCarouselPrint" data-slide-to="1"></li>
+                                                <li data-target="#myCarouselPrint" data-slide-to="2"></li>
+                                                <li data-target="#myCarouselPrint" data-slide-to="3"></li>
+                                                <li data-target="#myCarouselPrint" data-slide-to="4"></li>
+                                                <li data-target="#myCarouselPrint" data-slide-to="5"></li>
+                                                <li data-target="#myCarouselPrint" data-slide-to="6"></li>
+                                                <li data-target="#myCarouselPrint" data-slide-to="7"></li>
+                                                <li data-target="#myCarouselPrint" data-slide-to="8"></li>
+                                                <li data-target="#myCarouselPrint" data-slide-to="9"></li>
+                                                <li data-target="#myCarouselPrint" data-slide-to="10"></li>
+                                                <li data-target="#myCarouselPrint" data-slide-to="11"></li>
+                                                <li data-target="#myCarouselPrint" data-slide-to="12"></li>
+                                                <li data-target="#myCarouselPrint" data-slide-to="13"></li>
+                                            </ol>
+                                            <div class="stretchy-wrapper carousel-inner">
+                                                <div class="carousel-item active" style="background-image: url('/assets/img/projects/print/batteries.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/print/gear.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/print/dino.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/print/groot.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/print/licorne_scan.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/print/licorne.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/print/licorne1.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/print/licorne2.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/print/octopus.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/print/pump1.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/print/pump2.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/print/plateau.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/print/support.jpg')"></div>
+                                                <div class="carousel-item" style="background-image: url('/assets/img/projects/print/support_.jpg')"></div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#myCarouselPrint" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#myCarouselPrint" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Date:</strong>
+                                            2002~2024
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            3D Printing
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Integrate BabylonJS-->
+        <script src="js/babylonJS/main.js" type="module"></script>
+        <!-- Video player-->
+        <script src="js/videoplayer.js"></script>
+    </body>
+</html>
