@@ -1,1 +1,189 @@
-var _0x412fcb=_0x3511;function _0x3511(_0x1b1168,_0xe03433){var _0x4bf5a3=_0x4bf5();return _0x3511=function(_0x3511d2,_0x2fa2c0){_0x3511d2=_0x3511d2-0x13e;var _0x442455=_0x4bf5a3[_0x3511d2];return _0x442455;},_0x3511(_0x1b1168,_0xe03433);}(function(_0x82bfee,_0x5d54d3){var _0x1ec467=_0x3511,_0x507657=_0x82bfee();while(!![]){try{var _0xdab72e=-parseInt(_0x1ec467(0x163))/0x1+parseInt(_0x1ec467(0x169))/0x2*(parseInt(_0x1ec467(0x17a))/0x3)+parseInt(_0x1ec467(0x180))/0x4*(parseInt(_0x1ec467(0x14b))/0x5)+parseInt(_0x1ec467(0x147))/0x6+parseInt(_0x1ec467(0x1a1))/0x7+-parseInt(_0x1ec467(0x13f))/0x8+-parseInt(_0x1ec467(0x140))/0x9;if(_0xdab72e===_0x5d54d3)break;else _0x507657['push'](_0x507657['shift']());}catch(_0x2f7944){_0x507657['push'](_0x507657['shift']());}}}(_0x4bf5,0x3e9b0));const canvas=document[_0x412fcb(0x197)](_0x412fcb(0x146)),engine=new BABYLON[(_0x412fcb(0x19c))](canvas,!![]);console[_0x412fcb(0x189)](_0x412fcb(0x162));const scene=createScene();scene[_0x412fcb(0x142)][_0x412fcb(0x17f)]({'embedMode':!![]}),engine['runRenderLoop'](function(){var _0x1ca2b8=_0x412fcb;scene[_0x1ca2b8(0x175)]();}),window[_0x412fcb(0x15d)](_0x412fcb(0x167),function(){var _0x33e5ed=_0x412fcb;engine[_0x33e5ed(0x167)]();});function _0x4bf5(){var _0x129ef1=['pipeline','aberrationAmount','position','intensity','SceneLoader','samples','rotationQuaternion','glow','useBlurExponentialShadowMap','https://models.babylonjs.com/CornellBox/','Color3','Scene','addEventListener','rotation','getMaterialByName','addShadowCaster','meshes','Test01','493321UQosTl','registerBeforeRender','getMeshByName','bloomEnabled','resize','fxaa','2PscPlp','CubeTexture','lightmapTexture','roughness','fStop','dirLight','chromaticAberrationEnabled','depthOfFieldBlurLevel','ImportMesh','radialIntensity','chromaticAberration','suzanne.000','render','coordinatesIndex','GlowLayer','depthOfFieldEnabled','wheelPrecision','868389ICUKfJ','metallic','White','Texture','/assets/models/checkerBJS.png','show','64cnKevQ','depthOfField','.lightmap.jpg','__cornell-root__','cameras','ArcRotateCamera','Mesh','simpleShaderBall','allowUpsideDown','log','camera','clearColor','https://models.babylonjs.com/','Vector3','focalLength','forEach','getMeshByID','gammaSpace','/assets/models/Studio_Softbox_2Umbrellas_cube_specular.env','getNodeByName','cornellBox.glb','environmentTexture','sharpenEnabled','getElementById','fxaaEnabled','attachControl','grainEnabled','isSupported','Engine','parent','ShadowGenerator','material','TransformNode','372274OIfIzk','bloc.000','light.000','grain','73624pvrMxJ','4761612wPYLKd','name','debugLayer','focusDistance','colorAmount','getClassName','renderCanvas','2722866ojhBTG','bloomThreshold','createScene','bloomKernel','153615uYlMAR','minZ','receiveShadows','materials','DirectionalLight','sharpen'];_0x4bf5=function(){return _0x129ef1;};return _0x4bf5();}function assignLightmapOnMaterial(_0xfa9a3e,_0x29e7d7){var _0x41c6cf=_0x412fcb;_0xfa9a3e[_0x41c6cf(0x16b)]=_0x29e7d7,_0xfa9a3e[_0x41c6cf(0x16b)][_0x41c6cf(0x176)]=0x1,_0xfa9a3e['useLightmapAsShadowmap']=!![];}function createScene(){var _0x2bb61a=_0x412fcb;console[_0x2bb61a(0x189)](_0x2bb61a(0x149));var _0x311d7e=new BABYLON[(_0x2bb61a(0x15c))](engine);_0x311d7e[_0x2bb61a(0x18b)]=BABYLON[_0x2bb61a(0x15b)]['Black']();var _0x11c15c=new BABYLON[(_0x2bb61a(0x185))](_0x2bb61a(0x18a),Math['PI']/0x2,1.6,7.6,new BABYLON['Vector3'](0x0,1.5,0x0),_0x311d7e);_0x11c15c[_0x2bb61a(0x14c)]=0.01,_0x11c15c[_0x2bb61a(0x188)]=![],_0x11c15c[_0x2bb61a(0x179)]=0x96,_0x11c15c[_0x2bb61a(0x199)](canvas,!![]);var _0x12a465=new BABYLON[(_0x2bb61a(0x16a))](_0x2bb61a(0x192),_0x311d7e);_0x12a465[_0x2bb61a(0x191)]=![],_0x311d7e[_0x2bb61a(0x195)]=_0x12a465;var _0x42011e,_0x41f651,_0x9adfc7=new BABYLON['DefaultRenderingPipeline'](_0x2bb61a(0x151),!![],_0x311d7e,_0x311d7e[_0x2bb61a(0x184)]);_0x9adfc7[_0x2bb61a(0x19b)]&&(_0x9adfc7[_0x2bb61a(0x16f)]=![],_0x9adfc7[_0x2bb61a(0x173)][_0x2bb61a(0x152)]=0x1e,_0x9adfc7[_0x2bb61a(0x173)][_0x2bb61a(0x172)]=0x0,_0x9adfc7[_0x2bb61a(0x178)]=![],_0x9adfc7[_0x2bb61a(0x170)]=0x0,_0x9adfc7['depthOfField'][_0x2bb61a(0x143)]=0x7d0,_0x9adfc7[_0x2bb61a(0x181)][_0x2bb61a(0x18e)]=0x32,_0x9adfc7['depthOfField'][_0x2bb61a(0x16d)]=1.4,_0x9adfc7[_0x2bb61a(0x166)]=![],_0x9adfc7[_0x2bb61a(0x148)]=0.9,_0x9adfc7['bloomWeight']=0.15,_0x9adfc7[_0x2bb61a(0x14a)]=0x40,_0x9adfc7['bloomScale']=0.5,_0x9adfc7[_0x2bb61a(0x198)]=!![],_0x9adfc7['fxaaEnabled']&&(_0x9adfc7[_0x2bb61a(0x168)][_0x2bb61a(0x156)]=0x20,_0x9adfc7[_0x2bb61a(0x168)]['adaptScaleToCurrentViewport']=!![]),_0x9adfc7[_0x2bb61a(0x19a)]=![],_0x9adfc7['grain'][_0x2bb61a(0x154)]=0x1e,_0x9adfc7[_0x2bb61a(0x13e)]['animated']=![],_0x9adfc7['imageProcessingEnabled']=!![],_0x9adfc7[_0x2bb61a(0x156)]=0x0,_0x9adfc7[_0x2bb61a(0x196)]=![],_0x9adfc7[_0x2bb61a(0x150)]['edgeAmount']=0.3,_0x9adfc7['sharpen'][_0x2bb61a(0x144)]=0x1);BABYLON['SceneLoader']['ImportMesh']('',_0x2bb61a(0x15a),_0x2bb61a(0x194),_0x311d7e,function(){var _0x5bc99d=_0x2bb61a;_0x311d7e[_0x5bc99d(0x165)]('bloc.000')[_0x5bc99d(0x19d)][_0x5bc99d(0x141)]=_0x5bc99d(0x183),_0x311d7e[_0x5bc99d(0x14e)][_0x5bc99d(0x18f)](function(_0x387a63){_0x387a63['environmentIntensity']=1.4;}),_0x311d7e[_0x5bc99d(0x15f)](_0x5bc99d(0x1a3))['emissiveColor']=BABYLON[_0x5bc99d(0x15b)][_0x5bc99d(0x17c)]();var _0xacbccd=_0x311d7e['getMaterialByName'](_0x5bc99d(0x174));_0xacbccd[_0x5bc99d(0x17b)]=0.64,_0xacbccd[_0x5bc99d(0x16c)]=0.63;let _0x377cc2=[_0x5bc99d(0x1a2),'suzanne.000','cornellBox.000'];_0x377cc2[_0x5bc99d(0x18f)](function(_0x39ad21){var _0x5a5c00=_0x5bc99d;let _0x4c25cf=_0x311d7e[_0x5a5c00(0x193)](_0x39ad21),_0x36e513=_0x4c25cf['getChildren'](),_0x5414de=new BABYLON[(_0x5a5c00(0x17d))](_0x5a5c00(0x15a)+_0x4c25cf[_0x5a5c00(0x141)]+_0x5a5c00(0x182),_0x311d7e,![],![]);switch(_0x4c25cf[_0x5a5c00(0x145)]()){case _0x5a5c00(0x186):assignLightmapOnMaterial(_0x4c25cf[_0x5a5c00(0x19f)],_0x5414de);break;case _0x5a5c00(0x1a0):_0x36e513['forEach'](function(_0xaca04a){var _0x2a8232=_0x5a5c00;assignLightmapOnMaterial(_0xaca04a[_0x2a8232(0x19f)],_0x5414de);});break;}}),_0x311d7e[_0x5bc99d(0x161)][_0x5bc99d(0x18f)](function(_0x22ab04){var _0x248b67=_0x5bc99d;_0x22ab04[_0x248b67(0x14d)]=!![];});}),BABYLON[_0x2bb61a(0x155)][_0x2bb61a(0x171)]('',_0x2bb61a(0x18c),'shaderBall.glb',_0x311d7e,function(_0x5affda){var _0x1066d0=_0x2bb61a;_0x42011e=_0x311d7e[_0x1066d0(0x190)](_0x1066d0(0x187)),_0x41f651=_0x42011e[_0x1066d0(0x19d)],_0x41f651[_0x1066d0(0x141)]='__shaderBall-root__',_0x41f651['scaling']['scaleInPlace'](0.5),_0x41f651['position']['y']=1.6,_0x41f651[_0x1066d0(0x157)]=null;var _0x1996c6=_0x42011e[_0x1066d0(0x19f)];_0x1996c6['albedoTexture']=new BABYLON[(_0x1066d0(0x17d))](_0x1066d0(0x17e),_0x311d7e),_0x1996c6[_0x1066d0(0x17b)]=0x1,_0x1996c6[_0x1066d0(0x16c)]=0.33;var _0x50a4af=new BABYLON[(_0x1066d0(0x14f))](_0x1066d0(0x16e),new BABYLON['Vector3'](0x0,-0x1,0x0),_0x311d7e);_0x50a4af[_0x1066d0(0x153)]=new BABYLON[(_0x1066d0(0x18d))](0x0,0x3,0x0);var _0x27078a=new BABYLON[(_0x1066d0(0x19e))](0x80,_0x50a4af);_0x27078a[_0x1066d0(0x159)]=!![],_0x5affda[_0x1066d0(0x18f)](function(_0xb409bf){var _0xf7376f=_0x1066d0;_0x27078a[_0xf7376f(0x160)](_0xb409bf);});});var _0x256679=new BABYLON[(_0x2bb61a(0x177))](_0x2bb61a(0x158),_0x311d7e,{'mainTextureFixedSize':0x100,'blurKernelSize':0x20}),_0x48111d=0x0;return _0x311d7e[_0x2bb61a(0x164)](function(){var _0x5ebaa1=_0x2bb61a;_0x48111d+=0.1,_0x41f651!=undefined&&(_0x41f651['rotation']['x']+=0.002,_0x41f651[_0x5ebaa1(0x15e)]['y']-=0.003,_0x41f651[_0x5ebaa1(0x15e)]['z']-=0.001,_0x41f651[_0x5ebaa1(0x153)]['y']=Math['cos'](_0x48111d*0.1)*0.15+1.5);}),_0x311d7e;};
+const canvas = document.getElementById("renderCanvas");
+const engine = new BABYLON.Engine(canvas, true);
+console.log("Test01");
+const scene = createScene();
+scene.debugLayer.show(
+{
+    embedMode: true,
+});
+engine.runRenderLoop(function () 
+{
+    scene.render();
+});
+
+window.addEventListener("resize", function () 
+{
+    engine.resize();
+});
+
+function assignLightmapOnMaterial(material, lightmap) {
+    material.lightmapTexture = lightmap;
+    material.lightmapTexture.coordinatesIndex = 1;
+    material.useLightmapAsShadowmap = true;
+}
+
+// var createScene = function () {
+function createScene () {
+    console.log("createScene");
+
+    // scene init
+    var scene = new BABYLON.Scene(engine);
+    scene.clearColor = BABYLON.Color3.Black();
+    var camera = new BABYLON.ArcRotateCamera("camera", Math.PI / 2, 1.6, 7.6, new BABYLON.Vector3(0, 1.5, 0), scene);
+    camera.minZ = 0.01;
+    camera.allowUpsideDown = false;
+    camera.wheelPrecision = 150;
+    camera.attachControl(canvas, true);
+    var hdrTexture = new BABYLON.CubeTexture("/assets/models/Studio_Softbox_2Umbrellas_cube_specular.env", scene);
+    hdrTexture.gammaSpace = false;
+    scene.environmentTexture = hdrTexture;
+    var shaderBall, shaderBallGLTFRoot;
+
+
+    /** the pipeline start just below **/
+
+    //http://doc.babylonjs.com/how_to/using_default_rendering_pipeline
+    var pipeline = new BABYLON.DefaultRenderingPipeline(
+        "pipeline", // The name of the pipeline
+        true, // Do you want HDR textures ?
+        scene, // The scene instance
+        scene.cameras // The list of cameras to be attached to
+    );
+    if (pipeline.isSupported) {
+        //chromatic aberration | http://doc.babylonjs.com/api/classes/babylon.chromaticaberrationpostprocess
+        pipeline.chromaticAberrationEnabled = false; //false by default
+        pipeline.chromaticAberration.aberrationAmount = 30; //30 by default
+        pipeline.chromaticAberration.radialIntensity = 0; //0 by default
+        //DoF | http://doc.babylonjs.com/api/classes/babylon.depthoffieldeffect
+        pipeline.depthOfFieldEnabled = false; //false by default
+        pipeline.depthOfFieldBlurLevel = 0; //0 by default
+        pipeline.depthOfField.focusDistance = 2000; //2000 by default, in mm
+        pipeline.depthOfField.focalLength = 50; //50 by default, in mm
+        pipeline.depthOfField.fStop = 1.4; //1.4 by default
+        //bloom
+        pipeline.bloomEnabled = false; //false by default
+        pipeline.bloomThreshold = 0.9; //0.9 by default
+        pipeline.bloomWeight = 0.15; //0.15 by default
+        pipeline.bloomKernel = 64; //64 by default
+        pipeline.bloomScale = 0.5; //0.5 by default
+        //FSAA
+        pipeline.fxaaEnabled = true; //false by default
+        if (pipeline.fxaaEnabled) {
+            //http://doc.babylonjs.com/api/classes/babylon.fxaapostprocess#adaptscaletocurrentviewport
+            pipeline.fxaa.samples = 32; //1 by default
+            pipeline.fxaa.adaptScaleToCurrentViewport = true; //false by default
+        }
+        //grain | http://doc.babylonjs.com/api/classes/babylon.grainpostprocess
+        pipeline.grainEnabled = false; //false by default
+        pipeline.grain.intensity = 30; //30 by default
+        pipeline.grain.animated = false; //false by default
+        //image processing effect | http://doc.babylonjs.com/api/classes/babylon.imageprocessingpostprocess
+        pipeline.imageProcessingEnabled = true; //true by default
+        //MSAA
+        pipeline.samples = 0; //1 by default
+        //sharpening | http://doc.babylonjs.com/api/classes/babylon.sharpenpostprocess
+        pipeline.sharpenEnabled = false; //false by default
+        pipeline.sharpen.edgeAmount = 0.3; //0.3 by default
+        pipeline.sharpen.colorAmount = 1; //1 by default
+    }
+
+    /** pipeline ending **/
+
+    // cornell box
+    BABYLON.SceneLoader.ImportMesh(
+        "",
+        "https://models.babylonjs.com/CornellBox/",
+        "cornellBox.glb",
+        scene,
+        function () {
+            // renaming the default gltf "__root__"
+            scene.getMeshByName("bloc.000").parent.name = "__cornell-root__";
+            // material tweaking
+            scene.materials.forEach(function (material) {
+                material.environmentIntensity = 1.4;
+            });
+            scene.getMaterialByName("light.000").emissiveColor = BABYLON.Color3.White();
+            var monkeyMtl = scene.getMaterialByName("suzanne.000");
+            monkeyMtl.metallic = 0.64;
+            monkeyMtl.roughness = 0.63;
+
+            // we have to cycles through objects to assign their lightmaps
+            let lightmappedMeshes = ["bloc.000", "suzanne.000", "cornellBox.000"];
+            lightmappedMeshes.forEach(function (mesh) {
+                let currentMesh = scene.getNodeByName(mesh);
+                let currentMeshChildren = currentMesh.getChildren();
+                // lightmap texture creation
+                let currentLightmap = new BABYLON.Texture(
+                    "https://models.babylonjs.com/CornellBox/" + currentMesh.name + ".lightmap.jpg",
+                    scene,
+                    false,
+                    false);
+                switch (currentMesh.getClassName()) {
+                    case "Mesh":
+                        assignLightmapOnMaterial(currentMesh.material, currentLightmap);
+                        break;
+                    case "TransformNode":
+                        currentMeshChildren.forEach(function (mesh) {
+                            assignLightmapOnMaterial(mesh.material, currentLightmap);
+                        });
+                        break;
+                }
+            });
+
+            // all new meshes now receive shadows (shadowGenerator created below)
+            scene.meshes.forEach(function (mesh) {
+                mesh.receiveShadows = true;
+            });
+        });
+
+    // BJS logo 
+    BABYLON.SceneLoader.ImportMesh(
+        "",
+        "https://models.babylonjs.com/",
+        "shaderBall.glb",
+        scene,
+        function (shaderBallMeshes) {
+            // selecting the mesh we will animate later on scene.registerBeforeRender()
+            shaderBall = scene.getMeshByID("simpleShaderBall");
+            // renaming the default gltf empty object "__root__" and adapting it to the scene
+            shaderBallGLTFRoot = shaderBall.parent;
+            shaderBallGLTFRoot.name = "__shaderBall-root__";
+            shaderBallGLTFRoot.scaling.scaleInPlace(0.5);
+            shaderBallGLTFRoot.position.y = 1.6;
+            shaderBallGLTFRoot.rotationQuaternion = null; //this will help for the rotation anim later
+            // tweaking materials
+            var shaderBallMtl = shaderBall.material;
+            shaderBallMtl.albedoTexture = new BABYLON.Texture("/assets/models/checkerBJS.png", scene);
+            shaderBallMtl.metallic = 1;
+            shaderBallMtl.roughness = 0.33;
+            // dyn light to generate shadows 
+            var light = new BABYLON.DirectionalLight("dirLight", new BABYLON.Vector3(0, -1, 0), scene);
+            light.position = new BABYLON.Vector3(0, 3, 0);
+            // shadows handling
+            var shadowGenerator = new BABYLON.ShadowGenerator(128, light);
+            shadowGenerator.useBlurExponentialShadowMap = true;
+            shaderBallMeshes.forEach(function (mesh) {
+                shadowGenerator.addShadowCaster(mesh);
+            });
+        });
+
+    // why not using glow?
+    var glowLayer = new BABYLON.GlowLayer("glow", scene, {
+        mainTextureFixedSize: 256,
+        blurKernelSize: 32
+    });
+
+    // simple animation for the logo
+    var time = 0; //this will be used as a time variable
+    scene.registerBeforeRender(function () {
+        time += 0.1;
+        if (shaderBallGLTFRoot != undefined) {
+            shaderBallGLTFRoot.rotation.x += 0.002;
+            shaderBallGLTFRoot.rotation.y -= 0.003;
+            shaderBallGLTFRoot.rotation.z -= 0.001;
+            shaderBallGLTFRoot.position.y = (Math.cos(time * 0.1) * 0.15) + 1.5;
+        }
+    });
+
+    return scene;
+};

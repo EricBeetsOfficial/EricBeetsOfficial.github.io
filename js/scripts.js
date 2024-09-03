@@ -1,1 +1,49 @@
-const _0x173d03=_0x2ea8;(function(_0x132887,_0xc08bcb){const _0x36464a=_0x2ea8,_0x468ad1=_0x132887();while(!![]){try{const _0xef4199=-parseInt(_0x36464a(0x157))/0x1*(parseInt(_0x36464a(0x170))/0x2)+-parseInt(_0x36464a(0x173))/0x3*(-parseInt(_0x36464a(0x159))/0x4)+-parseInt(_0x36464a(0x158))/0x5*(-parseInt(_0x36464a(0x162))/0x6)+parseInt(_0x36464a(0x163))/0x7*(parseInt(_0x36464a(0x165))/0x8)+-parseInt(_0x36464a(0x166))/0x9+parseInt(_0x36464a(0x171))/0xa*(-parseInt(_0x36464a(0x15e))/0xb)+-parseInt(_0x36464a(0x174))/0xc*(-parseInt(_0x36464a(0x16d))/0xd);if(_0xef4199===_0xc08bcb)break;else _0x468ad1['push'](_0x468ad1['shift']());}catch(_0x1b7981){_0x468ad1['push'](_0x468ad1['shift']());}}}(_0x2a28,0x4c67e),window[_0x173d03(0x16f)](_0x173d03(0x168),_0x134823=>{const _0x37ef34=_0x173d03;var _0x542457=function(){const _0x54546d=_0x2ea8,_0x5cd131=document[_0x54546d(0x15f)][_0x54546d(0x16a)](_0x54546d(0x16c));if(!_0x5cd131)return;window[_0x54546d(0x15a)]===0x0?_0x5cd131[_0x54546d(0x161)]['remove']('navbar-shrink'):_0x5cd131[_0x54546d(0x161)][_0x54546d(0x15c)](_0x54546d(0x16e));};_0x542457(),document['addEventListener'](_0x37ef34(0x15d),_0x542457);const _0x766123=document[_0x37ef34(0x15f)][_0x37ef34(0x16a)]('#mainNav');_0x766123&&new bootstrap[(_0x37ef34(0x167))](document[_0x37ef34(0x15f)],{'target':_0x37ef34(0x16c),'offset':0x4a});;const _0x313fdf=document['body'][_0x37ef34(0x16a)](_0x37ef34(0x172)),_0x5332e0=[][_0x37ef34(0x16b)][_0x37ef34(0x169)](document['querySelectorAll'](_0x37ef34(0x156)));_0x5332e0[_0x37ef34(0x15b)](function(_0x57353b){_0x57353b['addEventListener']('click',()=>{const _0x5d9080=_0x2ea8;window['getComputedStyle'](_0x313fdf)[_0x5d9080(0x164)]!==_0x5d9080(0x160)&&_0x313fdf['click']();});});}));function _0x2ea8(_0x3a3059,_0x5ef3a1){const _0x2a281a=_0x2a28();return _0x2ea8=function(_0x2ea882,_0x27479f){_0x2ea882=_0x2ea882-0x156;let _0x1127fb=_0x2a281a[_0x2ea882];return _0x1127fb;},_0x2ea8(_0x3a3059,_0x5ef3a1);}function _0x2a28(){const _0x366844=['map','add','scroll','385tnxXcw','body','none','classList','6AhRnXh','16366toJYaG','display','96fNChqr','4940712VIzyrV','ScrollSpy','DOMContentLoaded','call','querySelector','slice','#mainNav','8593wdlVpu','navbar-shrink','addEventListener','2RrsEyh','145230jmVSnB','.navbar-toggler','117483eeSPIm','10068IhMbNR','#navbarResponsive\x20.nav-link','194291XtIThD','2951385ahIQtX','40BTahVv','scrollY'];_0x2a28=function(){return _0x366844;};return _0x2a28();}
+//
+// Scripts
+// 
+
+window.addEventListener('DOMContentLoaded', event => {
+
+    // Navbar shrink function
+    var navbarShrink = function () {
+        const navbarCollapsible = document.body.querySelector('#mainNav');
+        if (!navbarCollapsible) {
+            return;
+        }
+        if (window.scrollY === 0) {
+            navbarCollapsible.classList.remove('navbar-shrink')
+        } else {
+            navbarCollapsible.classList.add('navbar-shrink')
+        }
+
+    };
+
+    // Shrink the navbar 
+    navbarShrink();
+
+    // Shrink the navbar when page is scrolled
+    document.addEventListener('scroll', navbarShrink);
+
+    // Activate Bootstrap scrollspy on the main nav element
+    const mainNav = document.body.querySelector('#mainNav');
+    if (mainNav) {
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#mainNav',
+            offset: 74,
+        });
+    };
+
+    // Collapse responsive navbar when toggler is visible
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = [].slice.call(
+        document.querySelectorAll('#navbarResponsive .nav-link')
+    );
+    responsiveNavItems.map(function (responsiveNavItem) {
+        responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                navbarToggler.click();
+            }
+        });
+    });
+
+});

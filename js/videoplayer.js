@@ -1,1 +1,26 @@
-const _0x322c55=_0x53ad;(function(_0x4caa15,_0x1f6ca9){const _0x6ab4ff=_0x53ad,_0x5f0c7b=_0x4caa15();while(!![]){try{const _0x4bf9b7=-parseInt(_0x6ab4ff(0x1f6))/0x1+-parseInt(_0x6ab4ff(0x1fd))/0x2*(-parseInt(_0x6ab4ff(0x206))/0x3)+-parseInt(_0x6ab4ff(0x1f5))/0x4*(parseInt(_0x6ab4ff(0x202))/0x5)+-parseInt(_0x6ab4ff(0x204))/0x6*(parseInt(_0x6ab4ff(0x1f4))/0x7)+-parseInt(_0x6ab4ff(0x1f9))/0x8*(parseInt(_0x6ab4ff(0x1fa))/0x9)+-parseInt(_0x6ab4ff(0x205))/0xa+parseInt(_0x6ab4ff(0x1fb))/0xb*(parseInt(_0x6ab4ff(0x200))/0xc);if(_0x4bf9b7===_0x1f6ca9)break;else _0x5f0c7b['push'](_0x5f0c7b['shift']());}catch(_0x926cc1){_0x5f0c7b['push'](_0x5f0c7b['shift']());}}}(_0x4984,0xa770e));const medias=document[_0x322c55(0x1ff)]('video'),iframes=document[_0x322c55(0x1ff)](_0x322c55(0x1f7));VideoStop();function _0x53ad(_0x2aa482,_0x25603a){const _0x49845e=_0x4984();return _0x53ad=function(_0x53ad93,_0x4adcc6){_0x53ad93=_0x53ad93-0x1f4;let _0x100bbc=_0x49845e[_0x53ad93];return _0x100bbc;},_0x53ad(_0x2aa482,_0x25603a);}function VideoStop(){const _0x55ccf9=_0x322c55;medias[_0x55ccf9(0x1fc)](_0x5549a8=>{_0x5549a8['pause']();});}function _0x4984(){const _0x461d2d=['iframe','contentWindow','72544zPGoBn','630TjHTMW','198bwKvgT','forEach','10874vXnPVI','command','querySelectorAll','1747908PZJuAr','postMessage','5XiOgzW','length','4176450urlfUF','804270apVHHF','222gyiQjJ','7glTsAX','516JmQUwY','926971zzvYbg'];_0x4984=function(){return _0x461d2d;};return _0x4984();}function VideoStopYouTube(){const _0x1da401=_0x322c55;for(let _0x59d7b3=0x0;_0x59d7b3<iframes[_0x1da401(0x203)];_0x59d7b3++){iframes[_0x59d7b3]!==null&&iframes[_0x59d7b3][_0x1da401(0x1f8)][_0x1da401(0x201)](JSON['stringify']({'event':_0x1da401(0x1fe),'func':'stopVideo'}),'*');}}
+const medias = document.querySelectorAll("video");
+const iframes = document.querySelectorAll('iframe');
+
+VideoStop();
+// VideoStopYouTube();
+
+function VideoStop()
+{
+    // console.log("Pause video");
+    medias.forEach((media) =>
+    {
+        media.pause();
+    });
+}
+
+function VideoStopYouTube()
+{
+    // console.log("Pause youtube " + iframes.length);
+    for (let i = 0; i < iframes.length; i++)
+    {
+        if (iframes[i] !== null)
+        {
+            iframes[i].contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
+        }
+    }
+}

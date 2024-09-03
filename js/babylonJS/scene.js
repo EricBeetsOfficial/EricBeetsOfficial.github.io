@@ -1,1 +1,59 @@
-(function(_0x44a360,_0x12cc39){var _0x38519f=_0x36d8,_0xa8ff6c=_0x44a360();while(!![]){try{var _0xe23bc2=parseInt(_0x38519f(0x128))/0x1+-parseInt(_0x38519f(0x135))/0x2*(-parseInt(_0x38519f(0x11f))/0x3)+parseInt(_0x38519f(0x12f))/0x4+-parseInt(_0x38519f(0x11a))/0x5+parseInt(_0x38519f(0x134))/0x6+-parseInt(_0x38519f(0x122))/0x7*(-parseInt(_0x38519f(0x126))/0x8)+-parseInt(_0x38519f(0x137))/0x9;if(_0xe23bc2===_0x12cc39)break;else _0xa8ff6c['push'](_0xa8ff6c['shift']());}catch(_0x1f051d){_0xa8ff6c['push'](_0xa8ff6c['shift']());}}}(_0x4197,0xa6c04));function _0x4197(){var _0x56a5e3=['light','1816782LRcsQt','4494bQpzXx','blurScale','2470203QBconZ','ShadowGenerator','cameras','dir01','3343050pXQfMa','position','blurKernel','DefaultRenderingPipeline','intensity','423baRUSu','camera','pipeline','2693397kpNZhF','depthScale','Vector3','isSupported','8yLEfMp','vignetteWeight','174590JzxLEN','shadowMaxZ','imageProcessingEnabled','useKernelBlur','shadowMinZ','HemisphericLight','DirectionalLight','1788416ivNVAr','ArcRotateCamera','useBlurExponentialShadowMap','imageProcessing'];_0x4197=function(){return _0x56a5e3;};return _0x4197();}export function createScene(_0x2cb57f){var _0x3ea2e9=_0x36d8;createRendering(_0x2cb57f);var _0x344da3=new BABYLON[(_0x3ea2e9(0x130))](_0x3ea2e9(0x120),0x3*Math['PI']/0x4,Math['PI']/0x4,0x14,new BABYLON[(_0x3ea2e9(0x124))](0x0,0x0,0x0));const [_0x1e6f5a,_0x270beb]=createLight(_0x2cb57f);return[_0x344da3,createDynamicShadow(_0x270beb)];}function _0x36d8(_0x3e6414,_0x212f71){var _0x41972e=_0x4197();return _0x36d8=function(_0x36d8e5,_0x2d92be){_0x36d8e5=_0x36d8e5-0x11a;var _0x3d3876=_0x41972e[_0x36d8e5];return _0x3d3876;},_0x36d8(_0x3e6414,_0x212f71);}function createRendering(_0xdad2aa){var _0x49bce7=_0x36d8,_0x31bdea=new BABYLON[(_0x49bce7(0x11d))](_0x49bce7(0x121),!![],_0xdad2aa,_0xdad2aa[_0x49bce7(0x139)]);_0x31bdea[_0x49bce7(0x125)]&&(_0x31bdea[_0x49bce7(0x12a)]=!![],_0x31bdea[_0x49bce7(0x132)]['vignetteEnabled']=!![],_0x31bdea[_0x49bce7(0x132)][_0x49bce7(0x127)]=0x2);}function createLight(_0x5c4689){var _0x55a004=_0x36d8,_0x4b23ad=new BABYLON[(_0x55a004(0x12d))](_0x55a004(0x133),new BABYLON['Vector3'](0x1,0x1,0x0));_0x4b23ad[_0x55a004(0x11e)]=0.6;var _0x4f82b1=new BABYLON[(_0x55a004(0x12e))](_0x55a004(0x13a),new BABYLON['Vector3'](-0x1,-0x2,-0x1),_0x5c4689);return _0x4f82b1['intensity']=0x1,_0x4f82b1[_0x55a004(0x11b)]=new BABYLON[(_0x55a004(0x124))](0x2,0xa,0x2),_0x4f82b1[_0x55a004(0x12c)]=0x1,_0x4f82b1[_0x55a004(0x129)]=0x32,[_0x4b23ad,_0x4f82b1];}function createDynamicShadow(_0x3edb4d){var _0x415a29=_0x36d8,_0x129cdf=new BABYLON[(_0x415a29(0x138))](0x400,_0x3edb4d);return _0x129cdf[_0x415a29(0x131)]=!![],_0x129cdf[_0x415a29(0x12b)]=!![],_0x129cdf[_0x415a29(0x11c)]=0x10,_0x129cdf[_0x415a29(0x123)]=0x4,_0x129cdf[_0x415a29(0x136)]=0x1,_0x129cdf;}
+export function createScene(scene)
+{
+    createRendering(scene);
+
+    // Camera
+    // var camera = new BABYLON.ArcRotateCamera("camera", Math.PI / 2, Math.PI / 2, 15, new BABYLON.Vector3(0, 0, 0));
+    var camera = new BABYLON.ArcRotateCamera("camera", 3 * Math.PI / 4,  Math.PI / 4, 20, new BABYLON.Vector3(0, 0, 0));
+
+    const [light0,light] = createLight(scene);
+    return [camera, createDynamicShadow(light)];
+}
+
+function createRendering(scene)
+{
+    // Rendering
+    var pipeline = new BABYLON.DefaultRenderingPipeline(
+        "pipeline",
+        true,
+        scene,
+        scene.cameras
+    );
+    if (pipeline.isSupported)
+    {
+        pipeline.imageProcessingEnabled = true;
+        pipeline.imageProcessing.vignetteEnabled = true;
+        pipeline.imageProcessing.vignetteWeight = 2;
+    }
+}
+
+function createLight(scene)
+{
+    // Lights
+    var light0 = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
+    light0.intensity = 0.6;
+
+    var light = new BABYLON.DirectionalLight("dir01", new BABYLON.Vector3(-1, -2, -1), scene);
+    light.intensity = 1.0;
+	light.position = new BABYLON.Vector3(2, 10, 2);
+    light.shadowMinZ = 1;
+    light.shadowMaxZ = 50;
+
+	// var lightSphere = BABYLON.Mesh.CreateSphere("sphere", 10, 1, scene);
+	// lightSphere.position = light.position;
+	// lightSphere.material = new BABYLON.StandardMaterial("light", scene);
+	// lightSphere.material.emissiveColor = new BABYLON.Color3(1, 1, 0);
+    return [light0, light];
+}
+
+function createDynamicShadow(light)
+{
+    // Shadows
+	var shadowGenerator = new BABYLON.ShadowGenerator(1024, light);
+	shadowGenerator.useBlurExponentialShadowMap = true;
+    shadowGenerator.useKernelBlur = true;
+    shadowGenerator.blurKernel = 16;
+    shadowGenerator.depthScale = 4;
+    shadowGenerator.blurScale = 1;
+    return shadowGenerator;
+}

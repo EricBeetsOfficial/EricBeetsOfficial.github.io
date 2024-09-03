@@ -1,1 +1,122 @@
-const _0x2a937f=_0x24f9;(function(_0x2f583c,_0x4a9a25){const _0x4d4d19=_0x24f9,_0x471407=_0x2f583c();while(!![]){try{const _0x26eee1=-parseInt(_0x4d4d19(0x9e))/0x1+parseInt(_0x4d4d19(0xb9))/0x2+parseInt(_0x4d4d19(0x8b))/0x3*(parseInt(_0x4d4d19(0xa9))/0x4)+parseInt(_0x4d4d19(0xb3))/0x5+parseInt(_0x4d4d19(0xaa))/0x6*(-parseInt(_0x4d4d19(0xd4))/0x7)+-parseInt(_0x4d4d19(0x97))/0x8+parseInt(_0x4d4d19(0x98))/0x9;if(_0x26eee1===_0x4a9a25)break;else _0x471407['push'](_0x471407['shift']());}catch(_0x4e40fb){_0x471407['push'](_0x471407['shift']());}}}(_0xfc50,0x90b9a));function _0xfc50(){const _0x17bfdf=['IsSessionSupportedAsync','WebXRFeatureName','isVisible','3904855MauJYo','scaleY','TransformNode','https://192.168.0.23:3000/assets/EricBeets.png','outlineColor','render','1429866qsuxvA','root','white','latest','ImportMeshAsync','Image','rotationQuaternion','AdvancedDynamicTexture','EXITING_XR','CreateAsync','text','color','IMAGE_TRACKING','transformationMatrix','cornerRadius','GUI','height','Rectangle','fontSize','immersive-ar','scaleX','detach','getElementById','ToRadians','thickness','textVerticalAlignment','baseExperience','427903SQdCqH','WebXRState','add','Vector3','onTrackedImageUpdatedObservable','1672467aAnLhZ','scaling','runRenderLoop','isPointerBlocker','resize','onStateChangedObservable','https://ericbeetsofficial.github.io/assets/models/','then','WebXRSessionManager','emulated','parent','setEnabled','4346800tPzNLA','4554531MOKuuk','Quaternion','autoScale','position','addControl','Tools','934276INXlyO','renderCanvas','width','light1','textHorizontalAlignment','nEric_.glb','SceneLoader','arButton','immersive-ar\x20WebXR\x20session\x20mode\x20is\x20not\x20available\x20in\x20your\x20browser.','meshes','TextBlock','4yphXhJ','48VUEIFZ','IN_XR','alpha','unbounded','RotationAxis','outlineWidth'];_0xfc50=function(){return _0x17bfdf;};return _0xfc50();}var guiMessage;function _0x24f9(_0x4e953e,_0x54a4c8){const _0xfc500b=_0xfc50();return _0x24f9=function(_0x24f97a,_0x273177){_0x24f97a=_0x24f97a-0x8b;let _0x38783b=_0xfc500b[_0x24f97a];return _0x38783b;},_0x24f9(_0x4e953e,_0x54a4c8);}const urlImageTracker='https://192.168.0.23:3000/assets/EricBeets_.png',urlImageFull=_0x2a937f(0xb6),scaleModel=0xc;function createGUI(){const _0x1decb2=_0x2a937f;var _0x363804=BABYLON[_0x1decb2(0xc8)][_0x1decb2(0xc0)]['CreateFullscreenUI']('UI');guiMessage=new BABYLON[(_0x1decb2(0xc8))][(_0x1decb2(0xca))]('rimg'),guiMessage['background']='transparent',guiMessage[_0x1decb2(0xc7)]=0x14,guiMessage[_0x1decb2(0xd1)]=0x0,guiMessage[_0x1decb2(0x8e)]=!![],guiMessage[_0x1decb2(0xa0)]=0.75,guiMessage[_0x1decb2(0xc9)]=0.3;var _0x2bbefe=new BABYLON[(_0x1decb2(0xc8))][(_0x1decb2(0xbe))]('Tracker',urlImageTracker);_0x2bbefe[_0x1decb2(0x9a)]=!![],_0x2bbefe[_0x1decb2(0xac)]=0.65,_0x2bbefe[_0x1decb2(0xcd)]=0.45,_0x2bbefe[_0x1decb2(0xb4)]=0.45;var _0x432b5d=new BABYLON[(_0x1decb2(0xc8))][(_0x1decb2(0xa8))]();_0x432b5d[_0x1decb2(0xc3)]='Filmez\x20le\x20CV',_0x432b5d[_0x1decb2(0xc4)]=_0x1decb2(0xbb),_0x432b5d[_0x1decb2(0xb7)]='black',_0x432b5d[_0x1decb2(0xaf)]=0x3,_0x432b5d[_0x1decb2(0xcb)]=0x64,_0x432b5d[_0x1decb2(0xa2)]=BABYLON['GUI'][_0x1decb2(0xa8)]['HORIZONTAL_ALIGNMENT_CENTER'],_0x432b5d[_0x1decb2(0xd2)]=BABYLON[_0x1decb2(0xc8)][_0x1decb2(0xa8)]['VERTICAL_ALIGNMENT_TOP'],guiMessage[_0x1decb2(0x9c)](_0x2bbefe),guiMessage[_0x1decb2(0x9c)](_0x432b5d),_0x363804[_0x1decb2(0x9c)](guiMessage);}async function startXR(){const _0x46eb27=_0x2a937f,_0x1d0595=await BABYLON[_0x46eb27(0x93)][_0x46eb27(0xb0)]('immersive-ar');!_0x1d0595&&alert(_0x46eb27(0xa6));const _0x36be55=document['getElementById'](_0x46eb27(0x9f)),_0x2139b6=new BABYLON['Engine'](_0x36be55,!![]),_0x3993d7=new BABYLON['Scene'](_0x2139b6),_0xf5a26c=new BABYLON[(_0x46eb27(0xb5))](_0x46eb27(0xba),_0x3993d7);_0xf5a26c[_0x46eb27(0xbf)]=new BABYLON[(_0x46eb27(0x99))]();const _0x5c0b01=new BABYLON['HemisphericLight'](_0x46eb27(0xa1),new BABYLON[(_0x46eb27(0xd7))](0x1,0x1,0x0),_0x3993d7);BABYLON[_0x46eb27(0xa4)][_0x46eb27(0xbd)]('',_0x46eb27(0x91),_0x46eb27(0xa3))[_0x46eb27(0x92)](_0x8e28c8=>{const _0x207a9f=_0x46eb27;_0x8e28c8[_0x207a9f(0xa7)][0x0][_0x207a9f(0x95)]=_0xf5a26c;let _0x17f511=_0x8e28c8[_0x207a9f(0xa7)][0x0];_0x17f511[_0x207a9f(0xbf)]=new BABYLON[(_0x207a9f(0x99))][(_0x207a9f(0xae))](new BABYLON[(_0x207a9f(0xd7))](0x0,0x1,0x0),BABYLON[_0x207a9f(0x9d)][_0x207a9f(0xd0)](0x0)),_0x17f511[_0x207a9f(0x8c)]['x']/=scaleModel,_0x17f511[_0x207a9f(0x8c)]['y']/=scaleModel,_0x17f511['scaling']['z']/=scaleModel;});const _0x392f44=document[_0x46eb27(0xcf)](_0x46eb27(0xa5)),_0x48b20d=new BABYLON['WebXREnterExitUIButton'](_0x392f44,'immersive-ar',_0x46eb27(0xad)),_0x1bb10d=await BABYLON['WebXRDefaultExperience'][_0x46eb27(0xc2)](_0x3993d7,{'uiOptions':{'sessionMode':_0x46eb27(0xcc),'customButtons':[_0x48b20d]},'optionalFeatures':!![]});_0x1bb10d['teleportation'][_0x46eb27(0xce)](),_0x1bb10d[_0x46eb27(0xd3)][_0x46eb27(0x90)][_0x46eb27(0xd6)](_0x578401=>{const _0x2d9c59=_0x46eb27;_0x578401===BABYLON[_0x2d9c59(0xd5)][_0x2d9c59(0xab)]&&createGUI(),_0x578401===BABYLON[_0x2d9c59(0xd5)][_0x2d9c59(0xc1)]&&(guiMessage[_0x2d9c59(0xb2)]=![]);});const _0x175f70=_0x1bb10d[_0x46eb27(0xd3)]['featuresManager'],_0x700a0=_0x175f70['enableFeature'](BABYLON[_0x46eb27(0xb1)][_0x46eb27(0xc5)],_0x46eb27(0xbc),{'images':[{'src':urlImageTracker,'estimatedRealWorldWidth':0x1}]});_0x700a0[_0x46eb27(0xd8)][_0x46eb27(0xd6)](_0x499915=>{const _0x4063e7=_0x46eb27;_0xf5a26c[_0x4063e7(0x96)](!_0x499915[_0x4063e7(0x94)]),!_0x499915['emulated']&&_0x499915[_0x4063e7(0xc6)]['decompose'](_0xf5a26c['scaling'],_0xf5a26c[_0x4063e7(0xbf)],_0xf5a26c[_0x4063e7(0x9b)]),guiMessage['isVisible']=_0x499915[_0x4063e7(0x94)];});;_0x2139b6[_0x46eb27(0x8d)](()=>{const _0x92123=_0x46eb27;_0x3993d7[_0x92123(0xb8)]();}),window['addEventListener'](_0x46eb27(0x8f),function(){_0x2139b6['resize']();});}startXR();
+var guiMessage;
+const urlImageTracker = "https://ericbeets.free.fr/assets/EricBeets_.png";
+const urlImageFull = "https://ericbeets.free.fr/assets/EricBeets.png";
+const scaleModel = 12;
+
+function createGUI()
+{
+    var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
+
+    guiMessage = new BABYLON.GUI.Rectangle("rimg");
+    guiMessage.background = "transparent";
+    guiMessage.cornerRadius = 20;
+    guiMessage.thickness = 0;
+    guiMessage.isPointerBlocker = true;
+    guiMessage.width = 0.75;
+    guiMessage.height = 0.30;
+
+    var guiImageTracker = new BABYLON.GUI.Image("Tracker", urlImageTracker);
+    guiImageTracker.autoScale = true;
+    guiImageTracker.alpha = 0.65;
+    guiImageTracker.scaleX = 0.45;
+    guiImageTracker.scaleY = 0.45;
+
+    var guiText = new BABYLON.GUI.TextBlock();
+    guiText.text = "Filmez le CV";
+    guiText.color = "white";
+    guiText.outlineColor = "black";
+    guiText.outlineWidth = 3;
+    guiText.fontSize = 100;
+	guiText.textHorizontalAlignment = BABYLON.GUI.TextBlock.HORIZONTAL_ALIGNMENT_CENTER;
+	guiText.textVerticalAlignment = BABYLON.GUI.TextBlock.VERTICAL_ALIGNMENT_TOP;
+
+    guiMessage.addControl(guiImageTracker);
+    guiMessage.addControl(guiText);
+    advancedTexture.addControl(guiMessage);
+}
+
+async function startXR()
+{
+    const availableAR = await BABYLON.WebXRSessionManager.IsSessionSupportedAsync('immersive-ar');
+    if (!availableAR) {
+        alert('immersive-ar WebXR session mode is not available in your browser.');
+    }
+
+    const canvas = document.getElementById("renderCanvas");
+    const engine = new BABYLON.Engine(canvas, true);
+    const scene = new BABYLON.Scene(engine);
+
+    const root = new BABYLON.TransformNode("root", scene);
+    root.rotationQuaternion = new BABYLON.Quaternion();
+
+    const light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(1, 1, 0), scene);
+
+    BABYLON.SceneLoader.ImportMeshAsync("", "https://ericbeetsofficial.github.io/assets/models/", "nEric_.glb").then((result) =>
+    {
+        result.meshes[0].parent = root;
+        let parent = result.meshes[0];
+        parent.rotationQuaternion = new BABYLON.Quaternion.RotationAxis(new BABYLON.Vector3(0, 1, 0), BABYLON.Tools.ToRadians(0));
+        parent.scaling.x /= scaleModel;
+        parent.scaling.y /= scaleModel;
+        parent.scaling.z /= scaleModel;
+    });
+
+    const htmlButton = document.getElementById("arButton")
+    const arButton = new BABYLON.WebXREnterExitUIButton(htmlButton, "immersive-ar", "unbounded");
+
+    const xr = await BABYLON.WebXRDefaultExperience.CreateAsync(scene,
+    {
+        uiOptions: {
+            sessionMode: "immersive-ar",
+            customButtons: [arButton]
+        },
+        // optionalFeatures: ["hit-test", "dom-overlay"], // Optional features for AR
+        optionalFeatures: true
+    });
+    xr.teleportation.detach();
+
+    xr.baseExperience.onStateChangedObservable.add((state)=>
+    {
+        if(state === BABYLON.WebXRState.IN_XR)
+        {
+            createGUI();
+        }
+        if(state === BABYLON.WebXRState.EXITING_XR)
+        {
+            guiMessage.isVisible = false;
+        }
+    });
+
+    const featuresManager = xr.baseExperience.featuresManager;
+    const imageTracking = featuresManager.enableFeature(BABYLON.WebXRFeatureName.IMAGE_TRACKING, "latest",
+    {
+        images: [
+            {
+                src: urlImageTracker,
+                estimatedRealWorldWidth : 1 // in meters
+            },
+        ]
+    })
+
+    imageTracking.onTrackedImageUpdatedObservable.add((image) =>
+    {
+        root.setEnabled(!image.emulated);
+        if (!image.emulated)
+        {
+            image.transformationMatrix.decompose(root.scaling, root.rotationQuaternion, root.position);
+        }
+        guiMessage.isVisible = image.emulated;
+    });;
+
+    engine.runRenderLoop(() =>
+    {
+        scene.render();
+    });
+
+    window.addEventListener("resize", function ()
+    {
+        engine.resize();
+    })
+}
+
+startXR();

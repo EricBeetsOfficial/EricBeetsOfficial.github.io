@@ -1,1 +1,67 @@
-(function(_0x3be5c0,_0x17d436){const _0x83c93c=_0x1516,_0x29b00e=_0x3be5c0();while(!![]){try{const _0x1ed822=parseInt(_0x83c93c(0xdc))/0x1+parseInt(_0x83c93c(0xcc))/0x2+-parseInt(_0x83c93c(0xdb))/0x3+-parseInt(_0x83c93c(0xdf))/0x4+parseInt(_0x83c93c(0xd8))/0x5+-parseInt(_0x83c93c(0xd9))/0x6+parseInt(_0x83c93c(0xda))/0x7*(parseInt(_0x83c93c(0xd3))/0x8);if(_0x1ed822===_0x17d436)break;else _0x29b00e['push'](_0x29b00e['shift']());}catch(_0x1b8256){_0x29b00e['push'](_0x29b00e['shift']());}}}(_0x5cda,0xdb801));import{map_range}from'./utils.js';let firstX=null,firstY=null,margin=Math['PI']/0x8,_debug=![];function _0x1516(_0x29bd4b,_0x18cef1){const _0x5cdac0=_0x5cda();return _0x1516=function(_0x1516e6,_0x2021d5){_0x1516e6=_0x1516e6-0xca;let _0x2f3bda=_0x5cdac0[_0x1516e6];return _0x2f3bda;},_0x1516(_0x29bd4b,_0x18cef1);}export const createContext=function(_0x45d812,_0x48bdbc){const _0x1f14fa=_0x1516,_0x6b077b=new BABYLON[(_0x1f14fa(0xce))](_0x45d812,!![]);_0x6b077b[_0x1f14fa(0xcf)]=!![];const _0x23042a=new BABYLON[(_0x1f14fa(0xdd))](_0x6b077b);return engineEvent(_0x6b077b,_0x23042a,_0x45d812,_0x48bdbc),_0x23042a;};export function setDebug(_0x34daa6,_0x1885f1,_0x3d72b9,_0x4a3f3c){const _0x2250bf=_0x1516;_debug=_0x4a3f3c,_0x4a3f3c&&(margin=0x0,_0x1885f1[_0x2250bf(0xde)][_0x2250bf(0xd1)]({'embedMode':!![]}),_0x3d72b9[_0x2250bf(0xd6)](_0x34daa6,!![]));}export function updateSceneDesktop(_0x2fb9d1,_0x109f15,_0x90024f,_0xfbfdc5){const _0x9cbf2b=_0x1516;!_debug&&(_0x2fb9d1[_0x9cbf2b(0xd5)]=map_range(_0x109f15,_0xfbfdc5?.['clientWidth'],0x0,margin,Math['PI']-margin),_0x2fb9d1[_0x9cbf2b(0xe0)]=map_range(_0x90024f,_0xfbfdc5?.[_0x9cbf2b(0xd4)],0x0,margin*2.5,Math['PI']-margin*0x4));}export function updateSceneMobile(_0x401e39,_0x53e191,_0x51a807){const _0x1d3936=_0x1516;var _0x1896d6=_0x53e191/0xb4*Math['PI'],_0x31a90a=_0x51a807/0xb4*Math['PI'];if(firstX==null)firstX=_0x1896d6;if(firstY==null)firstY=_0x31a90a;_0x401e39[_0x1d3936(0xd5)]=map_range(_0x31a90a-firstY,Math['PI']/0x2,-Math['PI']/0x2,-margin,Math['PI']+margin),_0x401e39[_0x1d3936(0xe0)]=map_range(_0x1896d6-firstX,Math['PI']/0x2,-Math['PI'],margin,Math['PI']-margin);}function engineEvent(_0x183d2f,_0x5119c4,_0x5843a0,_0x561f0f){const _0x6270c2=_0x1516;_0x183d2f[_0x6270c2(0xe2)](function(){const _0x1a7df6=_0x6270c2;_0x5119c4[_0x1a7df6(0xca)]();}),window[_0x6270c2(0xcd)]('resize',function(){const _0x4b855b=_0x6270c2;_0x5843a0[_0x4b855b(0xcb)]=_0x561f0f[_0x4b855b(0xe1)],_0x5843a0[_0x4b855b(0xd7)]=_0x561f0f[_0x4b855b(0xd2)],_0x183d2f[_0x4b855b(0xd0)]();});}function _0x5cda(){const _0x3152e6=['Scene','debugLayer','2091396vmhgyM','beta','offsetWidth','runRenderLoop','render','width','1604714hnGXrR','addEventListener','Engine','doNotHandleTouchAction','resize','show','offsetHeight','40wedjFy','clientHeight','alpha','attachControl','height','5204140QdVKtJ','10311552TfMZvX','86926PmMArg','1355274nPONlQ','1686997fJzHRM'];_0x5cda=function(){return _0x3152e6;};return _0x5cda();}
+import { map_range } from "./utils.js";
+
+let firstX = null;
+let firstY = null;
+let margin = Math.PI / 8;
+let _debug = false;
+
+export const createContext = function (canvas, parent)
+{
+    // Engine and Scene
+    const engine = new BABYLON.Engine(canvas, true);
+    engine.doNotHandleTouchAction = true;
+    const scene = new BABYLON.Scene(engine);
+    engineEvent(engine, scene, canvas, parent);
+    return scene;
+};
+
+export function setDebug(canvas, scene, camera, debug)
+{
+    _debug = debug;
+    if (debug)
+    {
+        margin = 0;
+        // Enable BabylonJS inspectors
+        scene.debugLayer.show(
+        {
+            embedMode: true,
+        });
+    	camera.attachControl(canvas, true);
+    }
+}
+
+export function updateSceneDesktop(camera, alpha, beta, canvas)
+{
+    if (!_debug)
+    {
+        camera.alpha = map_range(alpha, canvas?.clientWidth, 0, margin, Math.PI - margin); // Y up
+        camera.beta = map_range(beta, canvas?.clientHeight, 0, margin * 2.5, Math.PI - margin * 4);  // X
+    }
+}
+
+export function updateSceneMobile(camera, beta, gamma)
+{
+    var x = beta / 180 * Math.PI;
+    var y = gamma / 180 * Math.PI;
+    if (firstX == null) firstX = x;
+    if (firstY == null) firstY = y;
+    camera.alpha = map_range(y - firstY, Math.PI / 2, -Math.PI / 2,  -margin, Math.PI + margin); // Y up
+    camera.beta = map_range(x - firstX, Math.PI / 2, -Math.PI, margin, Math.PI - margin);  // X
+}
+
+function engineEvent(engine, scene, canvas, parent)
+{
+    engine.runRenderLoop(function () 
+    {
+        scene.render();
+    });
+
+    window.addEventListener("resize", function () 
+    {
+        canvas.width = parent.offsetWidth;
+        canvas.height = parent.offsetHeight;
+        // console.log("Resize: " + canvas.width + " " + canvas.height);
+        engine.resize();
+    });
+
+}

@@ -1,1 +1,20 @@
-function _0x52c2(_0x9de4ae,_0x4ddb76){const _0x49fe91=_0x49fe();return _0x52c2=function(_0x52c2de,_0x29a5c6){_0x52c2de=_0x52c2de-0x185;let _0x476342=_0x49fe91[_0x52c2de];return _0x476342;},_0x52c2(_0x9de4ae,_0x4ddb76);}function _0x49fe(){const _0x954279=['match','6fLsmfK','1984210yeQPRY','Windows','169824qpAKMM','3024VzHpen','BlackBerry','5069900SCafLc','322042MbkthC','11WPlDKJ','userAgent','853853gAHNvP','1fLmvFC','Android','6328SSydQC','Opera','1021422ttSqhO'];_0x49fe=function(){return _0x954279;};return _0x49fe();}(function(_0x44c6c6,_0x56a54f){const _0x580da7=_0x52c2,_0x25e081=_0x44c6c6();while(!![]){try{const _0x50d374=-parseInt(_0x580da7(0x191))/0x1*(-parseInt(_0x580da7(0x18d))/0x2)+parseInt(_0x580da7(0x195))/0x3+parseInt(_0x580da7(0x189))/0x4+parseInt(_0x580da7(0x187))/0x5+parseInt(_0x580da7(0x186))/0x6*(parseInt(_0x580da7(0x190))/0x7)+-parseInt(_0x580da7(0x193))/0x8*(parseInt(_0x580da7(0x18a))/0x9)+-parseInt(_0x580da7(0x18c))/0xa*(parseInt(_0x580da7(0x18e))/0xb);if(_0x50d374===_0x56a54f)break;else _0x25e081['push'](_0x25e081['shift']());}catch(_0x74dfd7){_0x25e081['push'](_0x25e081['shift']());}}}(_0x49fe,0x46cd6));export const isMobile={'Android':function(){const _0x106b3f=_0x52c2;return navigator[_0x106b3f(0x18f)][_0x106b3f(0x185)](/Android/i);},'BlackBerry':function(){const _0x834a0c=_0x52c2;return navigator[_0x834a0c(0x18f)]['match'](/BlackBerry/i);},'iOS':function(){const _0x4fe360=_0x52c2;return navigator[_0x4fe360(0x18f)]['match'](/iPhone|iPad|iPod/i);},'Opera':function(){const _0x217dfd=_0x52c2;return navigator['userAgent'][_0x217dfd(0x185)](/Opera Mini/i);},'Windows':function(){const _0x31dbc5=_0x52c2;return navigator[_0x31dbc5(0x18f)]['match'](/IEMobile/i)||navigator['userAgent'][_0x31dbc5(0x185)](/WPDesktop/i);},'any':function(){const _0x4e1cf9=_0x52c2;return isMobile[_0x4e1cf9(0x192)]()||isMobile[_0x4e1cf9(0x18b)]()||isMobile['iOS']()||isMobile[_0x4e1cf9(0x194)]()||isMobile[_0x4e1cf9(0x188)]();}};
+export const isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};

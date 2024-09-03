@@ -1,1 +1,123 @@
-var _0x4380cf=_0x2382;function _0x2382(_0xa94faf,_0x1c1692){var _0x5be782=_0x5be7();return _0x2382=function(_0x23820a,_0x110c2a){_0x23820a=_0x23820a-0x12d;var _0x4cfe76=_0x5be782[_0x23820a];return _0x4cfe76;},_0x2382(_0xa94faf,_0x1c1692);}(function(_0x4474e6,_0x274c81){var _0x5bb2c2=_0x2382,_0x53a331=_0x4474e6();while(!![]){try{var _0x29badb=-parseInt(_0x5bb2c2(0x165))/0x1+-parseInt(_0x5bb2c2(0x12e))/0x2*(-parseInt(_0x5bb2c2(0x159))/0x3)+-parseInt(_0x5bb2c2(0x15e))/0x4*(-parseInt(_0x5bb2c2(0x13b))/0x5)+parseInt(_0x5bb2c2(0x155))/0x6*(parseInt(_0x5bb2c2(0x15b))/0x7)+-parseInt(_0x5bb2c2(0x13e))/0x8+-parseInt(_0x5bb2c2(0x139))/0x9+parseInt(_0x5bb2c2(0x131))/0xa;if(_0x29badb===_0x274c81)break;else _0x53a331['push'](_0x53a331['shift']());}catch(_0x13c481){_0x53a331['push'](_0x53a331['shift']());}}}(_0x5be7,0x59fe1));const canvas=document[_0x4380cf(0x12d)](_0x4380cf(0x137)),engine=new BABYLON[(_0x4380cf(0x130))](canvas,!![]);var addPanningCameraToScene=(_0x1fd8a8,_0x33e7a6)=>{var _0x52584c=_0x4380cf,_0x4ec7c8=new BABYLON[(_0x52584c(0x13f))](_0x52584c(0x14f),BABYLON[_0x52584c(0x141)][_0x52584c(0x150)](),_0x1fd8a8);_0x4ec7c8[_0x52584c(0x161)]=![],_0x4ec7c8['inputs'][_0x52584c(0x148)](),_0x4ec7c8[_0x52584c(0x156)](_0x33e7a6);var _0x3a9882=(_0x9dd447,_0x3ee01f)=>{var _0xb618a4=_0x52584c;return BABYLON['Vector3'][_0xb618a4(0x15f)](new BABYLON[(_0xb618a4(0x141))](_0x9dd447,_0x3ee01f,0x0),_0x33e7a6[_0xb618a4(0x144)],_0x33e7a6['height'],BABYLON[_0xb618a4(0x14a)][_0xb618a4(0x152)](),BABYLON[_0xb618a4(0x14a)][_0xb618a4(0x152)](),_0x4ec7c8[_0xb618a4(0x151)]())[_0xb618a4(0x162)]();},_0x26c83f=0x0,_0x15bfef=0x0;_0x4ec7c8[_0x52584c(0x135)]=BABYLON[_0x52584c(0x164)][_0x52584c(0x152)]();var _0x1204ee=()=>{var _0x52f0b6=_0x52584c,_0x1a0ae1=Math['abs'](_0x26c83f-_0x1fd8a8[_0x52f0b6(0x138)])>0x64||Math[_0x52f0b6(0x147)](_0x15bfef-_0x1fd8a8[_0x52f0b6(0x154)])>0x64;console[_0x52f0b6(0x14c)](_0x4ec7c8[_0x52f0b6(0x151)]()['m']);var _0x311d86=_0x3a9882(_0x26c83f,_0x15bfef),_0x233a07=_0x3a9882(_0x1fd8a8[_0x52f0b6(0x138)],_0x1fd8a8[_0x52f0b6(0x154)]),_0x42de69=BABYLON[_0x52f0b6(0x141)][_0x52f0b6(0x153)](_0x311d86,_0x233a07);if(_0x42de69[_0x52f0b6(0x140)]()>0x0&&!_0x1a0ae1){var _0x2183cf=BABYLON[_0x52f0b6(0x141)][_0x52f0b6(0x149)](_0x311d86,_0x233a07,_0x42de69),_0x5bf335=BABYLON['Quaternion'][_0x52f0b6(0x136)](_0x42de69,-_0x2183cf),_0x2c3f0a=BABYLON[_0x52f0b6(0x141)]['Forward']();_0x2c3f0a[_0x52f0b6(0x142)](_0x5bf335,_0x2c3f0a),_0x2c3f0a[_0x52f0b6(0x142)](_0x4ec7c8[_0x52f0b6(0x135)],_0x2c3f0a);var _0x2df3d0=BABYLON[_0x52f0b6(0x141)]['Cross'](BABYLON[_0x52f0b6(0x141)]['Up'](),_0x2c3f0a),_0x19cd92=BABYLON[_0x52f0b6(0x141)][_0x52f0b6(0x153)](_0x2c3f0a,_0x2df3d0),_0x2174b4=new BABYLON[(_0x52f0b6(0x14a))]['Identity']();_0x2174b4[_0x52f0b6(0x134)](0x0,_0x2df3d0['x'],_0x2df3d0['y'],_0x2df3d0['z'],0x0),_0x2174b4[_0x52f0b6(0x134)](0x1,_0x19cd92['x'],_0x19cd92['y'],_0x19cd92['z'],0x0),_0x2174b4[_0x52f0b6(0x134)](0x2,_0x2c3f0a['x'],_0x2c3f0a['y'],_0x2c3f0a['z'],0x0),_0x4ec7c8[_0x52f0b6(0x135)]=BABYLON[_0x52f0b6(0x164)][_0x52f0b6(0x15c)](_0x2174b4[_0x52f0b6(0x163)]());}_0x26c83f=_0x1fd8a8['pointerX'],_0x15bfef=_0x1fd8a8[_0x52f0b6(0x154)];},_0x69765e=_0x1fd8a8['onBeforeRenderObservable'][_0x52584c(0x14e)](_0x1204ee);_0x1fd8a8['onBeforeRenderObservable'][_0x52584c(0x13a)](_0x69765e),_0x1fd8a8[_0x52584c(0x12f)]=(_0x375055,_0x2db52f,_0x2dacc0)=>{var _0x21b788=_0x52584c;_0x69765e=_0x1fd8a8[_0x21b788(0x14b)]['add'](_0x1204ee),_0x4ec7c8['detachControl'](_0x33e7a6);},_0x1fd8a8[_0x52584c(0x160)]=(_0x108d09,_0x35198b,_0x943da5)=>{var _0x2488be=_0x52584c;_0x1fd8a8['onBeforeRenderObservable'][_0x2488be(0x13a)](_0x69765e),_0x4ec7c8[_0x2488be(0x156)](_0x33e7a6);};},createScene=function(){var _0x4a9284=_0x4380cf,_0x18ad3c=new BABYLON[(_0x4a9284(0x15d))](engine),_0x50e22=new BABYLON[(_0x4a9284(0x143))]('testdome',_0x4a9284(0x132),{'resolution':0x20,'size':0x3e8},_0x18ad3c);return addPanningCameraToScene(_0x18ad3c,canvas),BABYLON[_0x4a9284(0x13d)][_0x4a9284(0x157)](0x3e8)[_0x4a9284(0x146)](()=>{})[_0x4a9284(0x14d)](()=>{var _0x38cfce=_0x4a9284;typeof DeviceMotionEvent['requestPermission']==='function'&&DeviceMotionEvent['requestPermission']()[_0x38cfce(0x146)](_0x5acf5e=>{var _0x404bfa=_0x38cfce;if(_0x5acf5e===_0x404bfa(0x158)){}})[_0x38cfce(0x14d)](console['error']);}),_0x18ad3c;};const scene=createScene();function _0x5be7(){var _0x3d4b43=['onPointerDown','Engine','15776040kgWuXf','/assets/models/360photo.jpg','addEventListener','setRowFromFloats','rotationQuaternion','RotationAxis','renderCanvas','pointerX','4827087dNZVCn','remove','5lgSjjg','runRenderLoop','FreeCameraDeviceOrientationInput','3413024IfkjtN','FreeCamera','lengthSquared','Vector3','rotateByQuaternionToRef','PhotoDome','width','resize','then','abs','addDeviceOrientation','GetAngleBetweenVectors','Matrix','onBeforeRenderObservable','log','catch','add','camera','Zero','getProjectionMatrix','Identity','Cross','pointerY','30UhUhlC','attachControl','WaitForOrientationChangeAsync','granted','3ySBlmH','render','9345pQGFJt','FromRotationMatrix','Scene','346708SojMxR','Unproject','onPointerUp','_disablePointerInputWhenUsingDeviceOrientation','normalize','getRotationMatrix','Quaternion','386765RhysTS','getElementById','94778noPHLr'];_0x5be7=function(){return _0x3d4b43;};return _0x5be7();}engine[_0x4380cf(0x13c)](function(){var _0x4f0d0e=_0x4380cf;scene[_0x4f0d0e(0x15a)]();}),window[_0x4380cf(0x133)](_0x4380cf(0x145),function(){var _0x5ae434=_0x4380cf;engine[_0x5ae434(0x145)]();});
+const canvas = document.getElementById("renderCanvas"); // Get the canvas element
+const engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
+
+
+var addPanningCameraToScene = (scene, canvas) =>
+{
+    var camera = new BABYLON.FreeCamera("camera", BABYLON.Vector3.Zero(), scene);
+camera._disablePointerInputWhenUsingDeviceOrientation = false;
+    camera.inputs.addDeviceOrientation();
+    camera.attachControl(canvas);
+
+    var getPointerViewSpaceRay = (x, y) =>
+    {
+        return BABYLON.Vector3.Unproject(
+            new BABYLON.Vector3(x, y, 0), 
+            canvas.width, 
+            canvas.height,
+            BABYLON.Matrix.Identity(),
+            BABYLON.Matrix.Identity(), 
+            camera.getProjectionMatrix()).normalize();
+    }
+
+    var ptrX = 0;
+    var ptrY = 0;
+    camera.rotationQuaternion = BABYLON.Quaternion.Identity();
+
+    var sphericalPan = () =>
+    {
+        var massiveJump = (Math.abs(ptrX - scene.pointerX) > 100 || Math.abs(ptrY - scene.pointerY) > 100);
+
+        console.log(camera.getProjectionMatrix().m);
+
+        var priorRay = getPointerViewSpaceRay(ptrX, ptrY);
+        var currentRay = getPointerViewSpaceRay(scene.pointerX, scene.pointerY);
+        
+        var rotationAxis = BABYLON.Vector3.Cross(priorRay, currentRay);
+        if (rotationAxis.lengthSquared() > 0 && !massiveJump)
+        {
+            var rotationAngle = BABYLON.Vector3.GetAngleBetweenVectors(priorRay, currentRay, rotationAxis);
+            var rotation = BABYLON.Quaternion.RotationAxis(rotationAxis, -rotationAngle);
+
+            var newForward = BABYLON.Vector3.Forward();
+            newForward.rotateByQuaternionToRef(rotation, newForward);
+            newForward.rotateByQuaternionToRef(camera.rotationQuaternion, newForward);
+
+            // TODO: var matrix = BABYLON.Matrix.LookAtRH(BABYLON.Vector3.Zero(), newForward, BABYLON.Vector3.Up());
+            var newRight = BABYLON.Vector3.Cross(BABYLON.Vector3.Up(), newForward);
+            var newUp = BABYLON.Vector3.Cross(newForward, newRight);
+
+            var matrix = new BABYLON.Matrix.Identity();
+            matrix.setRowFromFloats(0, newRight.x, newRight.y, newRight.z, 0);
+            matrix.setRowFromFloats(1, newUp.x, newUp.y, newUp.z, 0);
+            matrix.setRowFromFloats(2, newForward.x, newForward.y, newForward.z, 0);
+
+            camera.rotationQuaternion = BABYLON.Quaternion.FromRotationMatrix(matrix.getRotationMatrix());
+        }
+
+        ptrX = scene.pointerX;
+        ptrY = scene.pointerY;
+    };
+
+    var observable = scene.onBeforeRenderObservable.add(sphericalPan);
+    scene.onBeforeRenderObservable.remove(observable);
+
+    scene.onPointerDown = (_, __, ___) =>
+    {
+        observable = scene.onBeforeRenderObservable.add(sphericalPan);
+        camera.detachControl(canvas);
+    }
+    scene.onPointerUp = (_, __, ___) =>
+    {
+        scene.onBeforeRenderObservable.remove(observable);
+        camera.attachControl(canvas);
+    }
+};
+
+var createScene = function () {
+    var scene = new BABYLON.Scene(engine);
+
+    var dome = new BABYLON.PhotoDome(
+        "testdome",
+        "/assets/models/360photo.jpg",
+        {
+            resolution: 32,
+            size: 1000
+        },
+        scene
+    );
+
+    addPanningCameraToScene(scene, canvas);
+        // if(scene.activeCamera === vrHelper.vrDeviceOrientationCamera){
+            BABYLON.FreeCameraDeviceOrientationInput.WaitForOrientationChangeAsync(1000).then(()=>{
+                // Successfully received sensor input
+            }).catch(()=>{
+               // alert("Device orientation camera is being used but no sensor is found, prompt user to enable in safari settings");
+               if (typeof DeviceMotionEvent.requestPermission === 'function') 
+	{
+		DeviceMotionEvent.requestPermission()
+		.then(permissionState => {
+			if (permissionState === 'granted') 
+			{
+				// DeviceMotionEvent.requestPermission() has been granted
+			}
+        })
+        .catch(console.error);
+       }
+            })
+        // }
+
+    return scene;
+};
+
+const scene = createScene();
+
+engine.runRenderLoop(function () 
+{
+    scene.render();
+});
+
+window.addEventListener("resize", function () 
+{
+    engine.resize();
+});

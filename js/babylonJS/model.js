@@ -1,1 +1,46 @@
-(function(_0x5913d4,_0x4a7757){const _0x13e07e=_0x1751,_0x256a3a=_0x5913d4();while(!![]){try{const _0x917ecf=parseInt(_0x13e07e(0x8f))/0x1+parseInt(_0x13e07e(0x76))/0x2+-parseInt(_0x13e07e(0x6b))/0x3*(-parseInt(_0x13e07e(0x6a))/0x4)+-parseInt(_0x13e07e(0x6e))/0x5*(-parseInt(_0x13e07e(0x7b))/0x6)+-parseInt(_0x13e07e(0x6c))/0x7*(parseInt(_0x13e07e(0x8e))/0x8)+parseInt(_0x13e07e(0x88))/0x9*(-parseInt(_0x13e07e(0x7d))/0xa)+-parseInt(_0x13e07e(0x8d))/0xb*(parseInt(_0x13e07e(0x87))/0xc);if(_0x917ecf===_0x4a7757)break;else _0x256a3a['push'](_0x256a3a['shift']());}catch(_0x2859b4){_0x256a3a['push'](_0x256a3a['shift']());}}}(_0x8b30,0x8ef1f));function _0x8b30(){const _0x2520fc=['material','Axis','4lnHRyi','1140351xYXXZK','5650246BvVcSt','Plane','61115sCMZQK','Quaternion','setBoundingInfo','Zero','boundingBox','SINGLESIDE','LOCAL','/assets/models/','268608xdPIED','BoundingInfo','scene.glb','translate','Mesh','318VdmWxs','CreatePlane','3432830kuExGm','getBoundingInfo','SceneLoader','ImportMeshAsync','Space','receiveShadows','length','RotationAxis','MeshBuilder','ToRadians','588dePdUh','9mmzfTH','rotationQuaternion','Maximize','minimumWorld','StandardMaterial','104115dqmmxs','8pORvUB','1037509IkKauX','ground-material','maximumWorld','FromPositionAndNormal','Tools','Vector3','plane','meshes','getChildMeshes'];_0x8b30=function(){return _0x2520fc;};return _0x8b30();}function _0x1751(_0x7a57df,_0x43d4dc){const _0x8b30a0=_0x8b30();return _0x1751=function(_0x175136,_0x57c7fa){_0x175136=_0x175136-0x69;let _0x269979=_0x8b30a0[_0x175136];return _0x269979;},_0x1751(_0x7a57df,_0x43d4dc);}export function loadModel(_0x15af8a,_0x215ca8,_0x102346){const _0x48cef2=_0x1751,_0x44d009=BABYLON[_0x48cef2(0x6d)][_0x48cef2(0x92)](new BABYLON[(_0x48cef2(0x94))][(_0x48cef2(0x71))](),new BABYLON[(_0x48cef2(0x94))]['Up']()),_0x12bc4a=BABYLON[_0x48cef2(0x85)][_0x48cef2(0x7c)](_0x48cef2(0x95),{'size':0x2710,'sourcePlane':_0x44d009,'sideOrientation':BABYLON[_0x48cef2(0x7a)][_0x48cef2(0x73)]});_0x12bc4a[_0x48cef2(0x98)]=new BABYLON[(_0x48cef2(0x8c))](_0x48cef2(0x90),_0x215ca8),BABYLON[_0x48cef2(0x7f)][_0x48cef2(0x80)]('','/assets/models/','nEric_.glb')['then'](_0x42ea30=>{const _0x9538d7=_0x48cef2;let _0x23e040=_0x42ea30[_0x9538d7(0x96)][0x0],_0x3aa3db=_0x23e040['getChildMeshes'](),_0x58d9fb=_0x3aa3db[0x0][_0x9538d7(0x7e)]()[_0x9538d7(0x72)]['minimumWorld'],_0x395337=_0x3aa3db[0x0][_0x9538d7(0x7e)]()['boundingBox'][_0x9538d7(0x91)];for(let _0x24a136=0x0;_0x24a136<_0x3aa3db['length'];_0x24a136++){_0x3aa3db[_0x24a136][_0x9538d7(0x82)]=!![];let _0x4ebccf=_0x3aa3db[_0x24a136][_0x9538d7(0x7e)]()[_0x9538d7(0x72)][_0x9538d7(0x8b)],_0x3d5a05=_0x3aa3db[_0x24a136]['getBoundingInfo']()[_0x9538d7(0x72)]['maximumWorld'];_0x58d9fb=BABYLON[_0x9538d7(0x94)]['Minimize'](_0x58d9fb,_0x4ebccf),_0x395337=BABYLON[_0x9538d7(0x94)][_0x9538d7(0x8a)](_0x395337,_0x3d5a05);}_0x23e040[_0x9538d7(0x70)](new BABYLON[(_0x9538d7(0x77))](_0x58d9fb,_0x395337)),_0x15af8a['setTarget'](_0x23e040,!![]);}),BABYLON['SceneLoader'][_0x48cef2(0x80)]('',_0x48cef2(0x75),_0x48cef2(0x78))['then'](_0x2db7ee=>{const _0x36b83c=_0x48cef2;let _0x408a45=_0x2db7ee[_0x36b83c(0x96)][0x0];_0x408a45[_0x36b83c(0x89)]=new BABYLON[(_0x36b83c(0x6f))][(_0x36b83c(0x84))](new BABYLON[(_0x36b83c(0x94))](0x0,0x1,0x0),BABYLON[_0x36b83c(0x93)][_0x36b83c(0x86)](-0x28)),_0x408a45['translate'](BABYLON[_0x36b83c(0x69)]['Z'],0x2,BABYLON[_0x36b83c(0x81)][_0x36b83c(0x74)]),_0x408a45[_0x36b83c(0x79)](BABYLON[_0x36b83c(0x69)]['X'],-0x4,BABYLON['Space']['LOCAL']);let _0x3aa827=_0x408a45[_0x36b83c(0x97)]();for(let _0x174b6b=0x0;_0x174b6b<_0x3aa827[_0x36b83c(0x83)];_0x174b6b++){_0x3aa827[_0x174b6b][_0x36b83c(0x82)]=!![];}});}
+export function loadModel(camera, scene, shadowGenerator)
+{
+    // Plane
+    const abstractPlane = BABYLON.Plane.FromPositionAndNormal(new BABYLON.Vector3.Zero, new BABYLON.Vector3.Up);
+    const ground = BABYLON.MeshBuilder.CreatePlane("plane", {size: 10000, sourcePlane: abstractPlane, sideOrientation: BABYLON.Mesh.SINGLESIDE});
+	// ground.receiveShadows = true;
+    ground.material = new BABYLON.StandardMaterial("ground-material", scene);
+
+    // let currentLightmap = new BABYLON.Texture("plane_lightmap.jpg", scene, false, false);
+    // ground.material.lightmapTexture = currentLightmap;
+    // ground.material.lightmapTexture.coordinatesIndex = 1;
+    // ground.material.useLightmapAsShadowmap = true;
+
+    BABYLON.SceneLoader.ImportMeshAsync("", "/assets/models/", "nEric_.glb").then((result) =>
+    {
+        let parent = result.meshes[0];
+    	// shadowGenerator.addShadowCaster(parent);
+        let childMeshes = parent.getChildMeshes();
+        let min = childMeshes[0].getBoundingInfo().boundingBox.minimumWorld;
+        let max = childMeshes[0].getBoundingInfo().boundingBox.maximumWorld;
+        for(let i = 0; i < childMeshes.length; i++)
+        {
+            childMeshes[i].receiveShadows = true;
+            let meshMin = childMeshes[i].getBoundingInfo().boundingBox.minimumWorld;
+            let meshMax = childMeshes[i].getBoundingInfo().boundingBox.maximumWorld;
+            min = BABYLON.Vector3.Minimize(min, meshMin);
+            max = BABYLON.Vector3.Maximize(max, meshMax);
+        }
+        parent.setBoundingInfo(new BABYLON.BoundingInfo(min, max));
+        camera.setTarget(parent, true);
+    });
+
+    BABYLON.SceneLoader.ImportMeshAsync("", "/assets/models/", "scene.glb").then((result) =>
+    {
+        let parent = result.meshes[0];
+    	// shadowGenerator.addShadowCaster(parent);
+        parent.rotationQuaternion = new BABYLON.Quaternion.RotationAxis(new BABYLON.Vector3(0, 1, 0), BABYLON.Tools.ToRadians(-40));
+        parent.translate(BABYLON.Axis.Z, 2, BABYLON.Space.LOCAL);
+        parent.translate(BABYLON.Axis.X, -4, BABYLON.Space.LOCAL);
+        let child = parent.getChildMeshes();
+        for (let i = 0; i < child.length; i++)
+        {
+            child[i].receiveShadows = true;
+        }
+    });
+}
